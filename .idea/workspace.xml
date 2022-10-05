@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Uebung1 fix">
-      <change beforePath="$PROJECT_DIR$/src/Uebung1/test/translatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uebung1/test/translatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Uebung1/test/TranslatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uebung1/test/TranslatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +47,8 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.translatorTest">
-    <configuration name="translatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.GermanTranslatorTest">
+    <configuration name="GermanTranslatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SoftwareEngineering1_LiamHess" />
       <extension name="coverage">
         <pattern>
@@ -56,13 +57,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Uebung1.test" />
-      <option name="MAIN_CLASS_NAME" value="Uebung1.test.translatorTest" />
+      <option name="MAIN_CLASS_NAME" value="Uebung1.test.GermanTranslatorTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="translatorTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GermanTranslatorTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SoftwareEngineering1_LiamHess" />
       <extension name="coverage">
         <pattern>
@@ -71,7 +72,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Uebung1.test" />
-      <option name="MAIN_CLASS_NAME" value="Uebung1.test.translatorTest" />
+      <option name="MAIN_CLASS_NAME" value="Uebung1.test.GermanTranslatorTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -81,8 +82,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.translatorTest" />
-        <item itemvalue="TestNG.translatorTest" />
+        <item itemvalue="JUnit.GermanTranslatorTest" />
+        <item itemvalue="TestNG.GermanTranslatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -97,7 +98,7 @@
       <workItem from="1664646386877" duration="611000" />
       <workItem from="1664880518817" duration="736000" />
       <workItem from="1664962703250" duration="20000" />
-      <workItem from="1664976297290" duration="3869000" />
+      <workItem from="1664976297290" duration="5924000" />
     </task>
     <task id="LOCAL-00001" summary="Uebung1">
       <created>1664646708277</created>
@@ -113,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664980487205</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Uebung1 fix">
+      <created>1664994704073</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664994704073</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
