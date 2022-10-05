@@ -1,6 +1,7 @@
 package Uebung1.view;
 
-import Uebung1.control.TranslatorUtility;
+import Uebung1.control.Translator;
+import Uebung1.utility.TranslatorFactory;
 
 public class Client {
 
@@ -14,9 +15,9 @@ public class Client {
 			//
 			// Strenge Implementierung gegen das Interface Translator gewuenscht!
 
-			//Implementierung mittels Utitlity Klasse
-			String translatedNumber = TranslatorUtility.translateNumber(aNumber);
-			System.out.println("Das Ergebnis der Berechnung: " + translatedNumber);
+			//Implementierung mittels Factory Klasse
+			Translator translator = TranslatorFactory.createGermanTranslator();
+			System.out.println("Das Ergebnis der Berechnung: " + translator.translateNumber(aNumber));
 		}
 }
 

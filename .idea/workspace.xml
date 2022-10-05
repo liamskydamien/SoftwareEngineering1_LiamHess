@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Uebung1">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SoftwareEngineering1_LiamHess.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SoftwareEngineering1_LiamHess.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Uebung1/control/Translator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uebung1/control/Translator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Uebung1/control/TranslatorUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uebung1/utility/TranslatorFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Uebung1/view/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uebung1/view/Client.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +37,7 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -46,7 +51,22 @@
     ]
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.translatorTest">
+    <configuration name="translatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareEngineering1_LiamHess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Uebung1.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Uebung1.test" />
+      <option name="MAIN_CLASS_NAME" value="Uebung1.test.translatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="translatorTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SoftwareEngineering1_LiamHess" />
       <extension name="coverage">
@@ -66,6 +86,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.translatorTest" />
         <item itemvalue="TestNG.translatorTest" />
       </list>
     </recent_temporary>
@@ -79,6 +100,9 @@
       <option name="presentableId" value="Default" />
       <updated>1664646385486</updated>
       <workItem from="1664646386877" duration="611000" />
+      <workItem from="1664880518817" duration="736000" />
+      <workItem from="1664962703250" duration="20000" />
+      <workItem from="1664976297290" duration="3501000" />
     </task>
     <task id="LOCAL-00001" summary="Uebung1">
       <created>1664646708277</created>
