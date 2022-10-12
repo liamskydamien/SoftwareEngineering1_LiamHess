@@ -1,4 +1,4 @@
-package uebung2;
+package uebung2.Interfaces;
 
 public interface Member {
 
