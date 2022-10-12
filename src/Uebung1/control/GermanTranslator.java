@@ -12,11 +12,11 @@ public class GermanTranslator implements Translator {
 	public String translateNumber( int number ) {
 		// [ihr Source Code aus Übung 1-2]
 		try {
-			String[] numbers = {"eins", "zwei", "drei", "vier", "fuenf", "sechs", "sieben", "acht", "neun", "zehn"};
+			String[] numbers = {"eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun", "zehn"};
 			return numbers[number-1];
 		}
 		catch (IndexOutOfBoundsException e){
-			return "Uebersetzung der Zahl " + number + " nicht moeglich (" + version + ")";
+			return "Übersetzung der Zahl " + number + " nicht möglich (" + version + ")";
 		}
 	}
 
