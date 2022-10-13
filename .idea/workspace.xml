@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Reverse Fix">
-      <change afterPath="$PROJECT_DIR$/src/uebung1/control/GermanTranslator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uebung1/control/Translator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uebung1/test/GermanTranslatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uebung1/utility/TranslatorFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uebung1/view/Client.java" afterDir="false" />
+    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Add First Tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Uebung1/control/GermanTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uebung1/control/GermanTranslator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Uebung1/control/Translator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uebung1/control/Translator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Uebung1/test/GermanTranslatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uebung1/test/GermanTranslatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Uebung1/utility/TranslatorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uebung1/utility/TranslatorFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Uebung1/view/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uebung1/view/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung2/Entities/MemberObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung2/Entities/MemberObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uebung2/Tests/ContainerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung2/Tests/ContainerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,10 +59,41 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.ContainerTest.testeEingabeVonNull">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="SoftwareEngineering1_LiamHess" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContainerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareEngineering1_LiamHess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uebung2.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uebung2.Tests" />
+      <option name="MAIN_CLASS_NAME" value="uebung2.Tests.ContainerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContainerTest.testeEingabeVonNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareEngineering1_LiamHess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uebung2.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uebung2.Tests" />
+      <option name="MAIN_CLASS_NAME" value="uebung2.Tests.ContainerTest" />
+      <option name="METHOD_NAME" value="testeEingabeVonNull" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -105,6 +132,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ContainerTest.testeEingabeVonNull" />
+        <item itemvalue="JUnit.ContainerTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.GermanTranslatorTest" />
         <item itemvalue="TestNG.GermanTranslatorTest" />
@@ -168,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665563619062</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add First Tests">
+      <created>1665653096793</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665653096793</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +225,7 @@
     <MESSAGE value="Uebung1" />
     <MESSAGE value="Uebung1 fix" />
     <MESSAGE value="Reverse Fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reverse Fix" />
+    <MESSAGE value="Add First Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add First Tests" />
   </component>
 </project>

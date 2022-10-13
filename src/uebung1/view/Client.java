@@ -1,4 +1,4 @@
-package Uebung1.view;
+package uebung1.view;
 
 import uebung1.control.Translator;
 import uebung1.utility.TranslatorFactory;
