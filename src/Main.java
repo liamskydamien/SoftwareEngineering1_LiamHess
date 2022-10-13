@@ -1,4 +1,4 @@
-import Uebung1.view.Client;
+import uebung1.view.Client;
 
 public class Main {
     public static void main(String[] args) {
