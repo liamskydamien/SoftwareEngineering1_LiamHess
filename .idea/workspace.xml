@@ -4,25 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Uebung1">
-      <change afterPath="$PROJECT_DIR$/src/uebung2/Container.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uebung2/ContainerException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uebung2/MemberObject.java" afterDir="false" />
+    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Add First Tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Uebung1/control/GermanTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uebung1/control/GermanTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Uebung1/control/Translator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uebung1/control/Translator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Uebung1/test/GermanTranslatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uebung1/test/GermanTranslatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Uebung1/utility/TranslatorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uebung1/utility/TranslatorFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Uebung1/view/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uebung1/view/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung2/Entities/MemberObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung2/Entities/MemberObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung2/Tests/ContainerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung2/Tests/ContainerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -34,36 +37,68 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "directory",
-      "module"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;
     ]
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="uebung2" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="translatorTest" type="TestNG" temporary="true" nameIsGenerated="true">
+}</component>
+  <component name="RunManager" selected="JUnit.ContainerTest.testeEingabeVonNull">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="SoftwareEngineering1_LiamHess" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContainerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareEngineering1_LiamHess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uebung2.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uebung2.Tests" />
+      <option name="MAIN_CLASS_NAME" value="uebung2.Tests.ContainerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContainerTest.testeEingabeVonNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareEngineering1_LiamHess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uebung2.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uebung2.Tests" />
+      <option name="MAIN_CLASS_NAME" value="uebung2.Tests.ContainerTest" />
+      <option name="METHOD_NAME" value="testeEingabeVonNull" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GermanTranslatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SoftwareEngineering1_LiamHess" />
       <extension name="coverage">
         <pattern>
@@ -72,7 +107,22 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Uebung1.test" />
-      <option name="MAIN_CLASS_NAME" value="Uebung1.test.translatorTest" />
+      <option name="MAIN_CLASS_NAME" value="Uebung1.test.GermanTranslatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GermanTranslatorTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareEngineering1_LiamHess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Uebung1.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Uebung1.test" />
+      <option name="MAIN_CLASS_NAME" value="Uebung1.test.GermanTranslatorTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -82,7 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.translatorTest" />
+        <item itemvalue="JUnit.ContainerTest.testeEingabeVonNull" />
+        <item itemvalue="JUnit.ContainerTest" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.GermanTranslatorTest" />
+        <item itemvalue="TestNG.GermanTranslatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -95,6 +149,11 @@
       <option name="presentableId" value="Default" />
       <updated>1664646385486</updated>
       <workItem from="1664646386877" duration="611000" />
+      <workItem from="1664880518817" duration="736000" />
+      <workItem from="1664962703250" duration="20000" />
+      <workItem from="1664976297290" duration="5924000" />
+      <workItem from="1665563079938" duration="562000" />
+      <workItem from="1665578746922" duration="144000" />
     </task>
     <task id="LOCAL-00001" summary="Uebung1">
       <created>1664646708277</created>
@@ -103,7 +162,49 @@
       <option name="project" value="LOCAL" />
       <updated>1664646708277</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Uebung1 fix">
+      <created>1664980487205</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664980487205</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Uebung1 fix">
+      <created>1664994704073</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664994704073</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Uebung1 fix">
+      <created>1665563301456</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665563301457</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Uebung1 fix">
+      <created>1665563328302</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665563328302</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Reverse Fix">
+      <created>1665563619062</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665563619062</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add First Tests">
+      <created>1665653096793</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665653096793</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +223,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Uebung1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Uebung1" />
+    <MESSAGE value="Uebung1 fix" />
+    <MESSAGE value="Reverse Fix" />
+    <MESSAGE value="Add First Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add First Tests" />
   </component>
 </project>

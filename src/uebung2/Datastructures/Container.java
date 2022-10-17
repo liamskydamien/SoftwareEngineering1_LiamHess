@@ -36,6 +36,11 @@ public class Container {
         return "Member-Objekt mit der ID" + memberID + " existiert nicht im Container und konnte somit nicht gelöscht werden.";
     }
 
+    //Antwort an die Frage "Warum ist eine Exception sinnvoller als eine Ausgabe wie hier."
+    //Es ist sinnvoller beziehungsweise die Nachteile einer solchen Handhabung sind, dass man die Fehlermeldung nicht Tracebacken kann.
+    //Zudem müsste man für jede Methode einen String ausgeben, ob die Methode funktioniert hat oder nicht.
+    //Eine Exception muss man zudem nur einmal schreiben und kann diese überall wo sie benötigt wird in der Methode aufrufen. Eine solche Fehlermeldung durch einen String muss in jeder Methode neu implementiert werden.
+
     public void dump(){
         for(Member currentMember: storage){
             System.out.println(currentMember.toString());

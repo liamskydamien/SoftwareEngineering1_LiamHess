@@ -3,7 +3,7 @@ package uebung2.Entities;
 import uebung2.Interfaces.Member;
 
 public class MemberObject implements Member {
-    private int ID;
+    private final int ID;
 
     public MemberObject(int ID) {
         this.ID = ID;
@@ -11,7 +11,7 @@ public class MemberObject implements Member {
 
     @Override
     public Integer getID() {
-        return null;
+        return ID;
     }
 
     @Override
