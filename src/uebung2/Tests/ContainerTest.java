@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class ContainerTest {
     private Container container;
-    private final MemberObject[] members = {new MemberObject(11), new MemberObject(22)};
+    private final MemberObject[] members = {new MemberObject(11), new MemberObject(22), new MemberObject(33)};
 
     @BeforeEach
     void setup(){
@@ -35,6 +35,8 @@ public class ContainerTest {
         assertEquals(1, container.size());
         container.addMember(members[1]);
         assertEquals(2, container.size());
+        container.addMember(members[2]);
+        assertEquals(3, container.size());
     }
 
     @Test
@@ -42,10 +44,13 @@ public class ContainerTest {
         //Hinzufügen
         container.addMember(members[0]);
         container.addMember(members[1]);
+        container.addMember(members[2]);
         //Eigentlicher Test
         container.deleteMember(11);
-        assertEquals(1,container.size());
+        assertEquals(2,container.size());
         container.deleteMember(22);
+        assertEquals(1,container.size());
+        container.deleteMember(33);
         assertEquals(0,container.size());
     }
 
