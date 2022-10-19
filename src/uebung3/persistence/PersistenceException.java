@@ -1,4 +1,4 @@
-package uebung3.Interfaces.persistence;
+package uebung3.persistence;
 
 public class PersistenceException extends Exception {
 
