@@ -1,11 +1,15 @@
 package uebung3.persistence;
-
+import java.io.*;
 import java.util.List;
 
 public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
 
     // URL of file, in which the objects are stored
     private String location = "objects.ser";
+    private ObjectInputStream ois;
+    private FileInputStream fis;
+    private ObjectOutputStream oos;
+    private FileOutputStream fos;
 
     // Backdoor method used only for testing purposes, if the location should be changed in a Unit-Test
     // Example: Location is a directory (Streams do not like directories, so try this out ;-)!
@@ -20,7 +24,16 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
      * and save
      */
     public void openConnection() throws PersistenceException {
-
+        try{
+            fis = new FileInputStream(location);
+            ois = new ObjectInputStream(fis);
+            fos = new FileOutputStream(location);
+            oos = new ObjectOutputStream(fos);
+        }
+        catch (IOException e){
+            e.printStackTrace();
+            throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "Connection not possible.");
+        }
     }
 
     @Override
@@ -28,42 +41,53 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
      * Method for closing the connections to a stream
      */
     public void closeConnection() throws PersistenceException {
-
+        try {
+            ois.close();
+            fis.close();
+            oos.close();
+            fos.close();
+        } catch (IOException e) {
+            throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "No Connection open.");
+        }
     }
 
     @Override
     /**
      * Method for saving a list of Member-objects to a disk (HDD)
      */
-    public void save(List<E> member) throws PersistenceException  {
-
+    public void save(List<E> members) throws PersistenceException  {
+        openConnection();
+        try {
+            oos.writeObject(members);
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new PersistenceException(PersistenceException.ExceptionType.ImplementationNotAvailable, "No File found.");
+        }
+        closeConnection();
     }
 
     @Override
+    @SuppressWarnings("unchecked")
     /**
      * Method for loading a list of Member-objects from a disk (HDD)
      * Some coding examples come for free :-)
      * Take also a look at the import statements above ;-!
      */
     public List<E> load() throws PersistenceException  {
-        // Some Coding hints ;-)
+        List<E> newList = null;
+        openConnection();
+        try {
+            Object obj = ois.readObject();
 
-        // ObjectInputStream ois = null;
-        // FileInputStream fis = null;
-        // List<...> newListe =  null;
-        //
-        // Initiating the Stream (can also be moved to method openConnection()... ;-)
-        // fis = new FileInputStream( " a location to a file" );
-        // ois = new ObjectInputStream(fis);
-
-        // Reading and extracting the list (try .. catch ommitted here)
-        // Object obj = ois.readObject();
-
-        // if (obj instanceof List<?>) {
-        //       newListe = (List) obj;
-        // return newListe
-
-        // and finally close the streams (guess where this could be...?)
-        return null;
+            if(obj instanceof List<?>){
+                newList = (List<E>) obj;
+            }
+        }
+        catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+            throw new PersistenceException(PersistenceException.ExceptionType.ImplementationNotAvailable, "No File to Read found.");
+        }
+        closeConnection();
+        return newList;
     }
 }

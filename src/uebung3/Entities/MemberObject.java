@@ -2,7 +2,9 @@ package uebung3.Entities;
 
 import uebung3.Interfaces.Member;
 
-public class MemberObject implements Member {
+import java.io.Serializable;
+
+public class MemberObject implements Member, Serializable{
     private final int ID;
 
     public MemberObject(int ID) {

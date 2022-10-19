@@ -2,13 +2,18 @@ package uebung3.Datastructures;
 
 import uebung3.Exceptions.ContainerException;
 import uebung3.Interfaces.Member;
+import uebung3.persistence.PersistenceException;
+import uebung3.persistence.PersistenceStrategy;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Container {
     public final static Container instance = new Container();
-    private final ArrayList<Member> storage = new ArrayList<>();
+    private List<Member> storage = new ArrayList<>();
+
+    private PersistenceStrategy<Member> strategy;
 
     private Container() {
     }
@@ -44,14 +49,26 @@ public class Container {
     //Zudem müsste man für jede Methode einen String ausgeben, ob die Methode funktioniert hat oder nicht.
     //Eine Exception muss man zudem nur einmal schreiben und kann diese überall wo sie benötigt wird in der Methode aufrufen. Eine solche Fehlermeldung durch einen String muss in jeder Methode neu implementiert werden.
 
-    public void dump(){
-        for(Member currentMember: storage){
-            System.out.println(currentMember.toString());
-        }
-    }
-
     public int size(){
         return storage.size();
     }
 
+    public void setStrategy(PersistenceStrategy<Member> strategy) {
+        this.strategy = strategy;
+    }
+
+    public void store() throws PersistenceException {
+        if(strategy == null){
+            throw new PersistenceException(PersistenceException.ExceptionType.NoStrategyIsSet, "No strategy is set.");
+        }
+        strategy.save(storage);
+    }
+
+    public void load() throws PersistenceException {
+        storage = strategy.load();
+    }
+
+    public List<Member> getCurrentList(){
+        return storage;
+    }
 }
