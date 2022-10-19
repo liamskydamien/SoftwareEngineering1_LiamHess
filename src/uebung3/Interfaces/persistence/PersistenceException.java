@@ -1,4 +1,4 @@
-package org.hbrs.se1.ws22.uebung3.persistence;
+package uebung3.Interfaces.persistence;
 
 public class PersistenceException extends Exception {
 
