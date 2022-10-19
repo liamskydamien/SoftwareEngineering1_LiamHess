@@ -7,12 +7,15 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class Container {
-    private final ArrayList<Member> storage;
+    public final static Container instance = new Container();
+    private final ArrayList<Member> storage = new ArrayList<>();
 
-    public Container(){
-        storage = new ArrayList<>();
+    private Container() {
     }
 
+    public static Container getInstance(){
+        return instance;
+    }
     public void addMember(Member member) throws ContainerException {
         if(member == null){
             throw new ContainerException("Das Member-Objekt ist null und kann daher nicht hizugefügt werden");

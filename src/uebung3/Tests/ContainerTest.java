@@ -11,17 +11,16 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class ContainerTest {
-    private Container container;
     private final MemberObject[] members = {new MemberObject(11), new MemberObject(22), new MemberObject(33)};
+    private final Container container = Container.getInstance();
 
     @BeforeEach
     void setup(){
-        container = new Container();
-    }
-
-    @AfterEach
-    void teardown(){
-        container = null;
+        int i = 0;
+        while (container.size() != 0){
+            container.deleteMember(members[i].getID());
+            i++;
+        }
     }
 
     @Test
