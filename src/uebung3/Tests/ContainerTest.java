@@ -93,12 +93,17 @@ public class ContainerTest {
         try{
             container.addMember(members[0]);
             assertEquals(1, container.size());
+            container.addMember(members[1]);
+            container.addMember(members[2]);
             container.store();
-            assertEquals(1, container.size());
+            assertEquals(3, container.size());
             container.deleteMember(11);
+            assertEquals(2, container.size());
+            container.deleteMember(22);
+            container.deleteMember(33);
             assertEquals(0, container.size());
             container.load();
-            assertEquals(1, container.size());
+            assertEquals(3, container.size());
         }catch (ContainerException | PersistenceException e){
             e.printStackTrace();
         }
