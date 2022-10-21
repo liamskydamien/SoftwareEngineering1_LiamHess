@@ -1,0 +1,88 @@
+Index: src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import Uebung1.view.Client;\r\n\r\npublic class Main {\r\n    public static void main(String[] args) {\r\n        Client showCaseClient = new Client();\r\n        for (Integer i: new int[]{1, 5, 7, 10, 11, -1}) {\r\n            showCaseClient.display(i);\r\n        }\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Main.java b/src/Main.java
+--- a/src/Main.java	
++++ b/src/Main.java	
+@@ -1,4 +1,4 @@
+-import Uebung1.view.Client;
++import uebung1.view.Client;
+ 
+ public class Main {
+     public static void main(String[] args) {
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"1deffec4-8737-49a6-ab4f-bf0eb7c5908b\" name=\"Changes\" comment=\"Reverse Fix\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2FXlbqYlMVJ0TBbCo7n5tt5XBxX\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;\r\n  },\r\n  &quot;keyToStringList&quot;: {\r\n    &quot;ChangesTree.GroupingKeys&quot;: [\r\n      &quot;directory&quot;,\r\n      &quot;module&quot;\r\n    ]\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\" selected=\"Application.Main\">\r\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Main\" />\r\n      <module name=\"SoftwareEngineering1_LiamHess\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"GermanTranslatorTest\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"SoftwareEngineering1_LiamHess\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Uebung1.test.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Uebung1.test\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Uebung1.test.GermanTranslatorTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"GermanTranslatorTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"SoftwareEngineering1_LiamHess\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Uebung1.test.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Uebung1.test\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Uebung1.test.GermanTranslatorTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.Main\" />\r\n        <item itemvalue=\"JUnit.GermanTranslatorTest\" />\r\n        <item itemvalue=\"TestNG.GermanTranslatorTest\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"1deffec4-8737-49a6-ab4f-bf0eb7c5908b\" name=\"Changes\" comment=\"\" />\r\n      <created>1664646385486</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1664646385486</updated>\r\n      <workItem from=\"1664646386877\" duration=\"611000\" />\r\n      <workItem from=\"1664880518817\" duration=\"736000\" />\r\n      <workItem from=\"1664962703250\" duration=\"20000\" />\r\n      <workItem from=\"1664976297290\" duration=\"5924000\" />\r\n      <workItem from=\"1665563079938\" duration=\"562000\" />\r\n      <workItem from=\"1665578746922\" duration=\"144000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Uebung1\">\r\n      <created>1664646708277</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664646708277</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Uebung1 fix\">\r\n      <created>1664980487205</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664980487205</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Uebung1 fix\">\r\n      <created>1664994704073</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664994704073</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Uebung1 fix\">\r\n      <created>1665563301456</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665563301457</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Uebung1 fix\">\r\n      <created>1665563328302</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665563328302</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Reverse Fix\">\r\n      <created>1665563619062</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665563619062</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"7\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Uebung1\" />\r\n    <MESSAGE value=\"Uebung1 fix\" />\r\n    <MESSAGE value=\"Reverse Fix\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Reverse Fix\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -6,6 +6,12 @@
+   <component name="ChangeListManager">
+     <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Reverse Fix">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Uebung1/control/GermanTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung1/control/GermanTranslator.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Uebung1/control/Translator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung1/control/Translator.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Uebung1/test/GermanTranslatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung1/test/GermanTranslatorTest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Uebung1/utility/TranslatorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung1/utility/TranslatorFactory.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Uebung1/view/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung1/view/Client.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -37,7 +43,8 @@
+     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;
+   },
+   &quot;keyToStringList&quot;: {
+     &quot;ChangesTree.GroupingKeys&quot;: [
+@@ -58,12 +65,12 @@
+       <module name="SoftwareEngineering1_LiamHess" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="Uebung1.test.*" />
++          <option name="PATTERN" value="uebung1.test.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+       <option name="PACKAGE_NAME" value="Uebung1.test" />
+-      <option name="MAIN_CLASS_NAME" value="Uebung1.test.GermanTranslatorTest" />
++      <option name="MAIN_CLASS_NAME" value="uebung1.test.GermanTranslatorTest" />
+       <option name="TEST_OBJECT" value="class" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+@@ -73,12 +80,12 @@
+       <module name="SoftwareEngineering1_LiamHess" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="Uebung1.test.*" />
++          <option name="PATTERN" value="uebung1.test.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+       <option name="PACKAGE_NAME" value="Uebung1.test" />
+-      <option name="MAIN_CLASS_NAME" value="Uebung1.test.GermanTranslatorTest" />
++      <option name="MAIN_CLASS_NAME" value="uebung1.test.GermanTranslatorTest" />
+       <option name="TEST_OBJECT" value="CLASS" />
+       <properties />
+       <listeners />
+@@ -108,6 +115,8 @@
+       <workItem from="1664976297290" duration="5924000" />
+       <workItem from="1665563079938" duration="562000" />
+       <workItem from="1665578746922" duration="144000" />
++      <workItem from="1665579713890" duration="3771000" />
++      <workItem from="1665598558369" duration="17000" />
+     </task>
+     <task id="LOCAL-00001" summary="Uebung1">
+       <created>1664646708277</created>

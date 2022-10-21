@@ -1,0 +1,126 @@
+Index: src/Uebung1/utility/TranslatorFactory.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Uebung1/utility/TranslatorFactory.java b/src/uebung1/utility/TranslatorFactory.java
+rename from src/Uebung1/utility/TranslatorFactory.java
+rename to src/uebung1/utility/TranslatorFactory.java
+--- a/src/Uebung1/utility/TranslatorFactory.java	
++++ b/src/uebung1/utility/TranslatorFactory.java	
+@@ -1,11 +1,13 @@
+-package Uebung1.utility;
++package uebung1.utility;
+ 
+-import Uebung1.control.GermanTranslator;
++import uebung1.control.GermanTranslator;
+ /**
+  * Factory Method Pattern
+  */
+ public class TranslatorFactory{
+     public static GermanTranslator createGermanTranslator(){
+-        return new GermanTranslator();
++        GermanTranslator germanTranslator = new GermanTranslator();
++        germanTranslator.setDate("November 2022");
++        return germanTranslator;
+     }
+ }
+Index: src/Uebung1/test/GermanTranslatorTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Uebung1/test/GermanTranslatorTest.java b/src/uebung1/test/GermanTranslatorTest.java
+rename from src/Uebung1/test/GermanTranslatorTest.java
+rename to src/uebung1/test/GermanTranslatorTest.java
+--- a/src/Uebung1/test/GermanTranslatorTest.java	
++++ b/src/uebung1/test/GermanTranslatorTest.java	
+@@ -1,13 +1,16 @@
+-package Uebung1.test;
++package uebung1.test;
+ 
+-import Uebung1.control.GermanTranslator;
+-import Uebung1.control.Translator;
++import uebung1.control.GermanTranslator;
++import org.junit.jupiter.api.BeforeEach;
+ import org.junit.jupiter.api.Test;
+ 
+ import static org.junit.jupiter.api.Assertions.assertEquals;
+-
+ public class GermanTranslatorTest {
+-    private final GermanTranslator translator = new GermanTranslator();
++    private GermanTranslator translator = new GermanTranslator();
++    @BeforeEach
++    void setup(){
++        translator = new GermanTranslator();
++    }
+ 
+     @Test
+     public void testWorking() {
+Index: src/Uebung1/view/Client.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Uebung1/view/Client.java b/src/uebung1/view/Client.java
+rename from src/Uebung1/view/Client.java
+rename to src/uebung1/view/Client.java
+--- a/src/Uebung1/view/Client.java	
++++ b/src/uebung1/view/Client.java	
+@@ -1,7 +1,7 @@
+-package Uebung1.view;
++package uebung1.view;
+ 
+-import Uebung1.control.Translator;
+-import Uebung1.utility.TranslatorFactory;
++import uebung1.control.Translator;
++import uebung1.utility.TranslatorFactory;
+ 
+ public class Client {
+ 
+Index: src/Uebung1/control/Translator.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Uebung1/control/Translator.java b/src/uebung1/control/Translator.java
+rename from src/Uebung1/control/Translator.java
+rename to src/uebung1/control/Translator.java
+--- a/src/Uebung1/control/Translator.java	
++++ b/src/uebung1/control/Translator.java	
+@@ -1,4 +1,4 @@
+-package Uebung1.control;
++package uebung1.control;
+ 
+ /**
+  * Das Translator Interface. Die Anzahl der Methoden ist fix
+Index: src/Uebung1/control/GermanTranslator.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Uebung1/control/GermanTranslator.java b/src/uebung1/control/GermanTranslator.java
+rename from src/Uebung1/control/GermanTranslator.java
+rename to src/uebung1/control/GermanTranslator.java
+--- a/src/Uebung1/control/GermanTranslator.java	
++++ b/src/uebung1/control/GermanTranslator.java	
+@@ -1,6 +1,4 @@
+-package Uebung1.control;
+-
+-import java.util.List;
++package uebung1.control;
+ 
+ public class GermanTranslator implements Translator {
+ 
+@@ -30,8 +28,10 @@
+ 	/**
+ 	 * Setzen des Datums, wann der Uebersetzer erzeugt wurde (Format: Monat/Jahr (Beispiel: Okt/2022))
+ 	 * Das Datum sollte system-intern durch eine Control-Klasse gesetzt werden und nicht von externen View-Klassen
++	 *
++	 * @return
+ 	 */
+-	public void setDate( String date ) {
++	public void setDate(String date ) {
+ 		this.date = date;
+ 	}
+ 
