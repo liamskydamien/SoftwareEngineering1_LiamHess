@@ -56,8 +56,8 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
      * Method for saving a list of Member-objects to a disk (HDD)
      */
     public void save(List<E> members) throws PersistenceException  {
-        FileOutputStream fileOutputStream = null;
-        ObjectOutputStream objectOutputStream = null;
+        FileOutputStream fileOutputStream;
+        ObjectOutputStream objectOutputStream;
         try {
         fileOutputStream = new FileOutputStream(location);
         objectOutputStream = new ObjectOutputStream(fileOutputStream);
