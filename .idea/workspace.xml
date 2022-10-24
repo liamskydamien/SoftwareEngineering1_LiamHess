@@ -5,18 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="uebung3 setup">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_10_2022_08_54__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_10_2022_08_57__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2022_11_02__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2022_11_02__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_10_2022_08_54__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_10_2022_08_54__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_10_2022_08_57__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_10_2022_08_57__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2022_11_02__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2022_11_02__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2022_11_02__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2022_11_02__Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Uebung1/control/GermanTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uebung1/control/GermanTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Uebung1/control/Translator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uebung1/control/Translator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Uebung1/test/GermanTranslatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uebung1/test/GermanTranslatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Uebung1/utility/TranslatorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uebung1/utility/TranslatorFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Uebung1/view/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uebung1/view/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung3/Datastructures/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung3/Datastructures/Container.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung3/Tests/ContainerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung3/Tests/ContainerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objects.ser" beforeDir="false" afterPath="$PROJECT_DIR$/objects.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Uebung1/control/GermanTranslator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Uebung1/control/Translator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Uebung1/test/GermanTranslatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Uebung1/utility/TranslatorFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Uebung1/view/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung3/persistence/PersistenceStrategyStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung3/persistence/PersistenceStrategyStream.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +69,7 @@
       <recent name="C:\Users\Liams\OneDrive\Desktop\SoftwareEngineering1_LiamHess\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ContainerTest (1)">
+  <component name="RunManager" selected="JUnit.ContainerTest.testeKorrektesSzenario">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="SoftwareEngineering1_LiamHess" />
@@ -123,28 +123,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GermanTranslatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContainerTest.testeKorrektesSzenario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SoftwareEngineering1_LiamHess" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Uebung1.test.*" />
+          <option name="PATTERN" value="uebung3.Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Uebung1.test" />
-      <option name="MAIN_CLASS_NAME" value="Uebung1.test.GermanTranslatorTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="uebung3.Tests" />
+      <option name="MAIN_CLASS_NAME" value="uebung3.Tests.ContainerTest" />
+      <option name="METHOD_NAME" value="testeKorrektesSzenario" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ContainerTest.testeKorrektesSzenario" />
         <item itemvalue="JUnit.ContainerTest (1)" />
         <item itemvalue="JUnit.ContainerTest" />
         <item itemvalue="JUnit.ContainerTest.testeEingabeVonNull" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.GermanTranslatorTest" />
       </list>
     </recent_temporary>
   </component>

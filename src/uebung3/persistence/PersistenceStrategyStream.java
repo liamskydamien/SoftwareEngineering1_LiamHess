@@ -30,6 +30,9 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
             fos = new FileOutputStream(location);
             oos = new ObjectOutputStream(fos);
         }
+        catch (FileNotFoundException e) {
+            throw new PersistenceException(PersistenceException.ExceptionType.ImplementationNotAvailable, "No File found.");
+        }
         catch (IOException e){
             e.printStackTrace();
             throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "Connection not possible.");
@@ -46,7 +49,11 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
             fis.close();
             oos.close();
             fos.close();
-        } catch (IOException e) {
+        }
+        catch (FileNotFoundException e) {
+            throw new PersistenceException(PersistenceException.ExceptionType.ImplementationNotAvailable, "No File found.");
+        }
+        catch (IOException e) {
             throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "No Connection open.");
         }
     }
@@ -56,21 +63,20 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
      * Method for saving a list of Member-objects to a disk (HDD)
      */
     public void save(List<E> members) throws PersistenceException  {
-        FileOutputStream fileOutputStream;
-        ObjectOutputStream objectOutputStream;
-        try {
-        fileOutputStream = new FileOutputStream(location);
-        objectOutputStream = new ObjectOutputStream(fileOutputStream);
-    }
-    catch (FileNotFoundException e) {
-        throw new PersistenceException(PersistenceException.ExceptionType.ImplementationNotAvailable, "No File found.");
-    }
-    catch (IOException e) {
-        throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "Fail to connect");
-    }
 
         try {
-            objectOutputStream.writeObject(members);
+        fos = new FileOutputStream(location);
+        oos = new ObjectOutputStream(fos);
+        }
+        catch (FileNotFoundException e) {
+            throw new PersistenceException(PersistenceException.ExceptionType.ImplementationNotAvailable, "No File found.");
+        }
+        catch (IOException e) {
+            throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "Fail to connect");
+        }
+
+        try {
+            oos.writeObject(members);
         }
         catch (IOException e) {
             e.printStackTrace();
@@ -78,21 +84,13 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
         }
 
         try {
-            objectOutputStream.close();
-            fileOutputStream.close();
-        } catch (IOException e) {
+            oos.close();
+            fos.close();
+        }
+        catch (IOException e) {
             throw new RuntimeException(e);
         }
 
-
-        /* openConnection();
-        try {
-            oos.writeObject(members);
-        } catch (IOException e) {
-            e.printStackTrace();
-            throw new PersistenceException(PersistenceException.ExceptionType.ImplementationNotAvailable, "No File found.");
-        }
-        closeConnection();*/
     }
 
     @Override
@@ -104,13 +102,10 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
      */
     public List<E> load() throws PersistenceException  {
         List<E> newList = null;
-        FileInputStream fileInputStream = null;
-        ObjectInputStream objectInputStream = null;
-        //openConnection();
 
         try {
-            fileInputStream = new FileInputStream(location);
-            objectInputStream = new ObjectInputStream(fileInputStream);
+            fis = new FileInputStream(location);
+            ois = new ObjectInputStream(fis);
         }
         catch (FileNotFoundException e) {
             throw new PersistenceException(PersistenceException.ExceptionType.ImplementationNotAvailable, "No File found.");
@@ -119,8 +114,9 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
             throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "Fail to connect");
         }
 
+
         try {
-            Object obj = objectInputStream.readObject();
+            Object obj = ois.readObject();
             if(obj instanceof List<?>){
                 newList = (List<E>) obj;
             }
@@ -131,8 +127,8 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
         }
 
         try {
-            objectInputStream.close();
-            fileInputStream.close();
+            ois.close();
+            fis.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
