@@ -11,6 +11,7 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
     private ObjectOutputStream oos;
     private FileOutputStream fos;
 
+    //Boolean um zu bestimmen welcher "Kanal" geöffnet oder geschlossen werden soll
     private boolean isInput = true;
 
     // Backdoor method used only for testing purposes, if the location should be changed in a Unit-Test
