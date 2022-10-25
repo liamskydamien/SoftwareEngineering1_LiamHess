@@ -65,6 +65,9 @@ public class Container {
     }
 
     public void load() throws PersistenceException {
+        if(strategy == null){
+            throw new PersistenceException(PersistenceException.ExceptionType.NoStrategyIsSet, "No strategy is set.");
+        }
         storage = strategy.load();
     }
 
