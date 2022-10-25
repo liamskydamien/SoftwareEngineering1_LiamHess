@@ -11,6 +11,8 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
     private ObjectOutputStream oos;
     private FileOutputStream fos;
 
+    private boolean isInput = true;
+
     // Backdoor method used only for testing purposes, if the location should be changed in a Unit-Test
     // Example: Location is a directory (Streams do not like directories, so try this out ;-)!
     public void setLocation(String location) {
@@ -25,10 +27,13 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
      */
     public void openConnection() throws PersistenceException {
         try{
-            fis = new FileInputStream(location);
-            ois = new ObjectInputStream(fis);
-            fos = new FileOutputStream(location);
-            oos = new ObjectOutputStream(fos);
+            if (isInput) {
+                fis = new FileInputStream(location);
+                ois = new ObjectInputStream(fis);
+            } else {
+                fos = new FileOutputStream(location);
+                oos = new ObjectOutputStream(fos);
+            }
         }
         catch (FileNotFoundException e) {
             throw new PersistenceException(PersistenceException.ExceptionType.ImplementationNotAvailable, "No File found.");
@@ -45,10 +50,14 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
      */
     public void closeConnection() throws PersistenceException {
         try {
-            ois.close();
-            fis.close();
-            oos.close();
-            fos.close();
+            if(isInput) {
+                ois.close();
+                fis.close();
+            }
+            else {
+                oos.close();
+                fos.close();
+            }
         }
         catch (FileNotFoundException e) {
             throw new PersistenceException(PersistenceException.ExceptionType.NoFileFound, "No File found.");
@@ -63,7 +72,11 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
      * Method for saving a list of Member-objects to a disk (HDD)
      */
     public void save(List<E> members) throws PersistenceException  {
+        isInput = false;
+        //Auslagerung in openConnection
+        openConnection();
 
+        /*
         try {
         fos = new FileOutputStream(location);
         oos = new ObjectOutputStream(fos);
@@ -74,6 +87,7 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
         catch (IOException e) {
             throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "Fail to connect.");
         }
+         */
 
         try {
             oos.writeObject(members);
@@ -81,7 +95,10 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
         catch (IOException e) {
             throw new PersistenceException(PersistenceException.ExceptionType.RuntimeError, "Something went wrong.");
         }
+        //Auslagerung in closeConnection
+        closeConnection();
 
+        /*
         try {
             oos.close();
             fos.close();
@@ -89,6 +106,7 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
         catch (IOException e) {
             throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "Could not close Stream.");
         }
+         */
 
     }
 
@@ -100,8 +118,13 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
      * Take also a look at the import statements above ;-!
      */
     public List<E> load() throws PersistenceException  {
+        isInput = true;
         List<E> newList = null;
 
+        //Auslagerung in openConnection
+        openConnection();
+
+        /*
         try {
             fis = new FileInputStream(location);
             ois = new ObjectInputStream(fis);
@@ -113,6 +136,7 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
             throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "Fail to connect");
         }
 
+         */
 
         try {
             Object obj = ois.readObject();
@@ -124,12 +148,17 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
             throw new PersistenceException(PersistenceException.ExceptionType.RuntimeError, "Something went wrong.");
         }
 
+        //Auslagerung in closeConnection
+        closeConnection();
+        /*
         try {
             ois.close();
             fis.close();
-        } catch (IOException e) {
+        }
+        catch (IOException e) {
             throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "Could not close Stream.");
         }
+        */
 
         return newList;
     }
