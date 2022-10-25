@@ -81,6 +81,7 @@ public class ContainerTest {
             container.addMember(members[1]);
             container.addMember(members[2]);
             assertThrows(PersistenceException.class, container::store);
+            assertThrows(PersistenceException.class, container::load);
         }
         catch (ContainerException e){
             e.printStackTrace();
