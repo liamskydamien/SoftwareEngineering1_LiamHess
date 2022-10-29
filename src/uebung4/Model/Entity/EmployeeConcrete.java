@@ -7,12 +7,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class EmployeeConcrete implements Employee {
-    private int id;
-    private String firstname;
-    private String lastname;
-    private String role;
+    private final int id;
+    private final String firstname;
+    private final String lastname;
+    private final String role;
     private String department;
-    private HashMap<String , Expertise> expertises;
+    private final HashMap<String , Expertise> expertises;
 
     public EmployeeConcrete(int id,
                             String firstname,
@@ -60,10 +60,10 @@ public class EmployeeConcrete implements Employee {
 
     @Override
     public String getExpertiseString(){
-        String output = "[";
+        StringBuilder output = new StringBuilder("[");
         for (HashMap.Entry<String, Expertise> expertiseEntry: expertises.entrySet()) {
-            output = output + "(" + expertiseEntry.getKey() + " : ";
-            output = output + expertiseEntry.getValue().toString() + "),";
+            output.append("(").append(expertiseEntry.getKey()).append(" : ");
+            output.append(expertiseEntry.getValue().toString()).append("),");
         }
         return output.substring(0,output.length()-1) + "]";
     }
