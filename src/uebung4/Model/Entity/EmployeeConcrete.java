@@ -7,14 +7,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class EmployeeConcrete implements Employee {
-    private Long id;
+    private int id;
     private String firstname;
     private String lastname;
     private String role;
     private String department;
     private HashMap<String , Expertise> expertises;
 
-    public EmployeeConcrete(Long id,
+    public EmployeeConcrete(int id,
                             String firstname,
                             String lastname,
                             String role,
@@ -29,7 +29,7 @@ public class EmployeeConcrete implements Employee {
     }
 
     @Override
-    public Long getID() {
+    public int getID() {
         return id;
     }
 
@@ -65,6 +65,20 @@ public class EmployeeConcrete implements Employee {
             output = output + "(" + expertiseEntry.getKey() + " : ";
             output = output + expertiseEntry.getValue().toString() + "),";
         }
-        return output.substring(0,output.length()-2) + "]";
+        return output.substring(0,output.length()-1) + "]";
+    }
+
+    @Override
+    public int compareTo(Employee o) {
+        return this.id - o.getID();
+    }
+
+    @Override
+    public String toString(){
+        String altDep = " - ";
+        if(department != null){
+            altDep = department;
+        }
+        return ""+  id + " : " + firstname + " " + lastname +", " + role + ", " + altDep +  ", " + getExpertiseString();
     }
 }
