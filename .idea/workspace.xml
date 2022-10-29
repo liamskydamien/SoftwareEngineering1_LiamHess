@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Start refactoring">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung4/Datastructure/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Datastructure/Container.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung4/Exception/ContainerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Exception/ContainerException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung4/Persistance/PersistenceStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Persistance/PersistenceStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung4/Persistance/PersistenceStrategyStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Persistance/PersistenceStrategyStream.java" afterDir="false" />
+    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Refactor PersitanceStream">
+      <change afterPath="$PROJECT_DIR$/src/uebung4/Client/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uebung4/Exception/ClientException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung4/Model/Entity/EmployeeConcrete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Model/Entity/EmployeeConcrete.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +182,7 @@
       <workItem from="1666183568860" duration="364000" />
       <workItem from="1666184242341" duration="1478000" />
       <workItem from="1666873950191" duration="1860000" />
-      <workItem from="1667036971337" duration="839000" />
+      <workItem from="1667036971337" duration="2999000" />
     </task>
     <task id="LOCAL-00001" summary="Uebung1">
       <created>1664646708277</created>
@@ -270,7 +268,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666875629354</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Refactor Container">
+      <created>1667037839857</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1667037839857</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Refactor PersitanceStream">
+      <created>1667037961758</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1667037961758</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,6 +309,8 @@
     <MESSAGE value="Setup Uebung4" />
     <MESSAGE value="Employee" />
     <MESSAGE value="Start refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start refactoring" />
+    <MESSAGE value="Refactor Container" />
+    <MESSAGE value="Refactor PersitanceStream" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor PersitanceStream" />
   </component>
 </project>

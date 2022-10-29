@@ -27,7 +27,6 @@ public class EmployeeConcrete implements Employee {
         this.expertises = expertises;
     }
 
-
     @Override
     public Long getID() {
         return id;
