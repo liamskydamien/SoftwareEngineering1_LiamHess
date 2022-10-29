@@ -1,5 +1,7 @@
 package uebung4.Datastructure;
 
+import uebung4.Exception.ContainerException;
+import uebung4.Exception.PersistenceException;
 import uebung4.Model.Interface.Employee;
 import uebung4.Persistance.PersistenceStrategy;
 
@@ -8,55 +10,53 @@ import java.util.List;
 import java.util.Objects;
 
 public class Container {
-    public final static Container instance = new Container();
+    private static Container instance;
     private List<Employee> storage = new ArrayList<>();
 
     private PersistenceStrategy<Employee> strategy;
 
     private Container() {
+
     }
 
-
-    public static Container getInstance(){
+    public synchronized static Container getInstance(){
+        if(instance == null){
+            instance = new Container();
+        }
         return instance;
     }
-    public void addMember(Member member) throws ContainerException {
-        if(member == null){
-            throw new ContainerException("Das Member-Objekt ist null und kann daher nicht hizugefügt werden");
+    public void addEmployee(Employee employee) throws ContainerException {
+        if(employee == null){
+            throw new ContainerException(ContainerException.ContainerExceptionType.EntityNotValid,"Das Employee-Objekt ist null und kann daher nicht hizugefügt werden");
         }
-        for (Member currentMember: storage) {
-            if (Objects.equals(currentMember.getID(), member.getID())){
-                throw new ContainerException("Das Member-Objekt mit der ID "+ member.getID() + " ist bereits vorhanden.");
+        for (Employee currentEmployee: storage) {
+            if (Objects.equals(currentEmployee.getID(), employee.getID())){
+                throw new ContainerException(ContainerException.ContainerExceptionType.EntityAlreadyAdded, "Das Employee-Objekt mit der ID "+ employee.getID() + " ist bereits vorhanden.");
             }
         }
-        storage.add(member);
+        storage.add(employee);
     }
 
-    public String deleteMember(int memberID){
+    public void deleteEmployee(int employeeId) throws ContainerException {
         int counter = 0;
-        for (Member currentMember: storage) {
-            if (Objects.equals(currentMember.getID(), memberID)){
+        for (Employee currentEmpoyee: storage) {
+            if (Objects.equals(currentEmpoyee.getID(), employeeId)){
                 storage.remove(counter);
-                return "Member-Objekt mit der ID " + memberID + " wurde erfolgreich gelöscht.";
+                return;
             }
         }
-        return "Member-Objekt mit der ID" + memberID + " existiert nicht im Container und konnte somit nicht gelöscht werden.";
+        throw new ContainerException(ContainerException.ContainerExceptionType.EntityNotFound, "Das Employee-Objekt mit der ID " + employeeId + " konnte nicht gefunden werden.");
     }
-
-    //Antwort an die Frage "Warum ist eine Exception sinnvoller als eine Ausgabe wie hier."
-    //Es ist sinnvoller beziehungsweise die Nachteile einer solchen Handhabung sind, dass man die Fehlermeldung nicht Tracebacken kann.
-    //Zudem müsste man für jede Methode einen String ausgeben, ob die Methode funktioniert hat oder nicht.
-    //Eine Exception muss man zudem nur einmal schreiben und kann diese überall wo sie benötigt wird in der Methode aufrufen. Eine solche Fehlermeldung durch einen String muss in jeder Methode neu implementiert werden.
 
     public int size(){
         return storage.size();
     }
 
-    public void setStrategy(PersistenceStrategy<Member> strategy) {
+    public void setStrategy(PersistenceStrategy<Employee> strategy) {
         this.strategy = strategy;
     }
 
-    public void store() throws PersistenceException {
+    public void store() throws PersistenceException{
         if(strategy == null){
             throw new PersistenceException(PersistenceException.ExceptionType.NoStrategyIsSet, "No strategy is set.");
         }
@@ -70,7 +70,7 @@ public class Container {
         storage = strategy.load();
     }
 
-    public List<Member> getCurrentList(){
+    public List<Employee> getCurrentList(){
         return storage;
     }
 }
