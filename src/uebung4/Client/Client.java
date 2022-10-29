@@ -5,8 +5,10 @@ import uebung4.Exception.ClientException;
 import uebung4.Exception.ContainerException;
 import uebung4.Model.Entity.EmployeeConcrete;
 import uebung4.Model.Expertise;
+import uebung4.Model.Interface.Employee;
 
 import java.util.HashMap;
+import java.util.List;
 
 public class Client {
     private final Container container = Container.getInstance();
@@ -47,5 +49,57 @@ public class Client {
         }
     }
 
+    public String dump(){
+        List<Employee> employeeList = container.getCurrentList();
+        String output = "  ID |        Vorname |       Nachname |       Abteilung |           Rolle |       Expertise" + "\n";
+        for (Employee employee: employeeList){
+            output = output + makeRow(employee) + "\n";
+        }
+        return output;
+    }
+
+    private String makeRow(Employee employee){
+        String output = "";
+        for(int i = 0; i < 4 - employee.getID().toString().length(); i++){
+            output = output + " ";
+        }
+        output = output + employee.getID() + "  ";
+
+        for(int j = 0; j < 16 - employee.getFirstname().length(); j++){
+            output = output + " ";
+        }
+        output = output + employee.getFirstname() + "  ";
+
+        for(int u = 0; u < 16 - employee.getLastname().length(); u++){
+            output = output + " ";
+        }
+        output = output + employee.getLastname() + "  ";
+
+        if(employee.getDepartment() != null) {
+            for (int o = 0; o < 16 - employee.getDepartment().length(); o++) {
+                output = output + " ";
+            }
+            output = output + employee.getDepartment() + "  ";
+        }
+        else {
+            for (int o = 0; o < 16 - employee.getDepartment().length(); o++) {
+                output = output + "-";
+            }
+        }
+
+        for(int p = 0; p < 16 - employee.getRole().length(); p++){
+            output = output + " ";
+        }
+        output = output + employee.getRole() + "  ";
+
+        output = output + employee.getExpertiseString();
+
+        return output;
+    }
+
+    /* Methoden zum Testen der Klasse */
+    public int size(){
+        return container.size();
+    }
 
 }

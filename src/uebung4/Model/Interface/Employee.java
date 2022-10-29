@@ -11,4 +11,5 @@ public interface Employee {
     public String getRole();
     public String getDepartment();
     public HashMap<String, Expertise> getExpertise();
+    public String getExpertiseString();
 }

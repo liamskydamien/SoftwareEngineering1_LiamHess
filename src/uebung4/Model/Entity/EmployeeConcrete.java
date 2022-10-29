@@ -4,6 +4,7 @@ import uebung4.Model.Expertise;
 import uebung4.Model.Interface.Employee;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class EmployeeConcrete implements Employee {
     private Long id;
@@ -55,5 +56,15 @@ public class EmployeeConcrete implements Employee {
     @Override
     public HashMap<String, Expertise> getExpertise() {
         return expertises;
+    }
+
+    @Override
+    public String getExpertiseString(){
+        String output = "[";
+        for (HashMap.Entry<String, Expertise> expertiseEntry: expertises.entrySet()) {
+            output = output + "(" + expertiseEntry.getKey() + " : ";
+            output = output + expertiseEntry.getValue().toString() + "),";
+        }
+        return output.substring(0,output.length()-2) + "]";
     }
 }

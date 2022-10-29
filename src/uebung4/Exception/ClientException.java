@@ -8,6 +8,10 @@ public class ClientException extends Exception{
         this.clientExceptionType = clientExceptionType;
     }
 
+    public ClientExceptionType getClientExceptionType(){
+        return clientExceptionType;
+    }
+
     public enum ClientExceptionType{
         WrongFormatFirstname,
         WrongFormatLastname,

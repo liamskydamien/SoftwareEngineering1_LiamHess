@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Refactor PersitanceStream">
-      <change afterPath="$PROJECT_DIR$/src/uebung4/Client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uebung4/Exception/ClientException.java" afterDir="false" />
+    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Adding Client and Enter Method">
+      <change afterPath="$PROJECT_DIR$/src/uebung4/Test/TestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung4/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung4/Exception/ClientException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Exception/ClientException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uebung4/Model/Entity/EmployeeConcrete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Model/Entity/EmployeeConcrete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung4/Model/Interface/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Model/Interface/Employee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +185,7 @@
       <workItem from="1666183568860" duration="364000" />
       <workItem from="1666184242341" duration="1478000" />
       <workItem from="1666873950191" duration="1860000" />
-      <workItem from="1667036971337" duration="2999000" />
+      <workItem from="1667036971337" duration="7304000" />
     </task>
     <task id="LOCAL-00001" summary="Uebung1">
       <created>1664646708277</created>
@@ -282,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667037961758</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Adding Client and Enter Method">
+      <created>1667040047723</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1667040047723</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +321,7 @@
     <MESSAGE value="Start refactoring" />
     <MESSAGE value="Refactor Container" />
     <MESSAGE value="Refactor PersitanceStream" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor PersitanceStream" />
+    <MESSAGE value="Adding Client and Enter Method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Client and Enter Method" />
   </component>
 </project>
