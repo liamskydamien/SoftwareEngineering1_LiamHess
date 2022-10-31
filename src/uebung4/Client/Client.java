@@ -56,7 +56,10 @@ public class Client {
     public String dump(){
         List<Employee> employeeList = container.getCurrentList();
         employeeList.sort(null);
-        String output = "  ID |         Vorname |        Nachname |       Abteilung |                   Rolle |        Expertise" + "\n";
+        String output = """
+                 ID |         Vorname |        Nachname |       Abteilung |                   Rolle |        Expertise
+                 ---+-----------------+-----------------+-----------------+-------------------------+-------------------------
+                        """;
         for (Employee employee: employeeList){
             output = output + makeRow(employee) + "\n";
         }
@@ -65,35 +68,35 @@ public class Client {
 
     private String makeRow(Employee employee){
         String output = "";
-        for(int i = 0; i < 4 - String.valueOf(employee.getID()).length(); i++){
+        for(int i = 0; i < 2 - String.valueOf(employee.getID()).length(); i++){
             output = output + " ";
         }
-        output = output + employee.getID() + "  ";
+        output = output + employee.getID() + " |";
 
         for(int j = 0; j < 16 - employee.getFirstname().length(); j++){
             output = output + " ";
         }
-        output = output + employee.getFirstname() + "  ";
+        output = output + employee.getFirstname() + " |";
 
         for(int u = 0; u < 16 - employee.getLastname().length(); u++){
             output = output + " ";
         }
-        output = output + employee.getLastname() + "  ";
+        output = output + employee.getLastname() + " |";
 
         if(employee.getDepartment() != null) {
             for (int o = 0; o < 16 - employee.getDepartment().length(); o++) {
                 output = output + " ";
             }
-            output = output + employee.getDepartment() + "  ";
+            output = output + employee.getDepartment() + " |";
         }
         else {
-                output = output + "     --------     ";
+                output = output + "     --------    |";
         }
 
         for(int p = 0; p < 24 - employee.getRole().length(); p++){
             output = output + " ";
         }
-        output = output + employee.getRole() + "  ";
+        output = output + employee.getRole() + " |";
 
         output = output + employee.getExpertiseString();
 

@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Adding enter and dump and Testclass">
+    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="adding search">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uebung4/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Client/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uebung4/Model/Entity/EmployeeConcrete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Model/Entity/EmployeeConcrete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung4/Model/Interface/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Model/Interface/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uebung4/Test/TestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Test/TestClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +76,7 @@
       <recent name="uebung4.Datastructure" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestClient.testeSearch">
+  <component name="RunManager" selected="JUnit.TestClient.testeDump">
     <configuration name="uebung4.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="uebung4.Main" />
       <module name="SoftwareEngineering1_LiamHess" />
@@ -156,8 +155,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestClient.testeSearch" />
         <item itemvalue="JUnit.TestClient.testeDump" />
+        <item itemvalue="JUnit.TestClient.testeSearch" />
         <item itemvalue="JUnit.TestClient" />
         <item itemvalue="Application.uebung4.Main" />
         <item itemvalue="JUnit.ContainerTest.testeKorrektesSzenario" />
@@ -186,7 +185,7 @@
       <workItem from="1666184242341" duration="1478000" />
       <workItem from="1666873950191" duration="1860000" />
       <workItem from="1667036971337" duration="7340000" />
-      <workItem from="1667044628431" duration="4406000" />
+      <workItem from="1667044628431" duration="7385000" />
     </task>
     <task id="LOCAL-00001" summary="Uebung1">
       <created>1664646708277</created>
@@ -300,7 +299,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667044375201</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="adding search">
+      <created>1667049350383</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1667049350383</updated>
+    </task>
+    <task id="LOCAL-00018" summary="adding search">
+      <created>1667049431213</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1667049431213</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,6 +344,7 @@
     <MESSAGE value="Refactor PersitanceStream" />
     <MESSAGE value="Adding Client and Enter Method" />
     <MESSAGE value="Adding enter and dump and Testclass" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding enter and dump and Testclass" />
+    <MESSAGE value="adding search" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding search" />
   </component>
 </project>

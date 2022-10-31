@@ -75,7 +75,7 @@ public class EmployeeConcrete implements Employee {
 
     @Override
     public String toString(){
-        String altDep = " - ";
+        String altDep = "- ";
         if(department != null){
             altDep = department;
         }

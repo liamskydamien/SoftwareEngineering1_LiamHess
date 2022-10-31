@@ -50,18 +50,25 @@ public class TestClient {
         client.enter(2, "Thorsten","Bonne","Controlling", "Financial", expertise);
         client.enter(5, "Karl", "Jonas", "Software-Entwickler", "-", expertise);
         assertEquals(3,client.size());
-        assertEquals("  ID |         Vorname |        Nachname |       Abteilung |                   Rolle |        Expertise\n" +
-                "   1            Sascha              Alda                IT            Projekt-Leiter  [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]\n" +
-                "   2          Thorsten             Bonne         Financial               Controlling  [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]\n" +
-                "   5              Karl             Jonas       --------          Software-Entwickler  [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]" +
-                "\n", client.dump());
-        client.enter(4,"Corinna", "Ruppel", "Usability", "Crerative", expertise);
-        assertEquals("  ID |         Vorname |        Nachname |       Abteilung |                   Rolle |        Expertise\n" +
-                "   1            Sascha              Alda                IT            Projekt-Leiter  [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]\n" +
-                "   2          Thorsten             Bonne         Financial               Controlling  [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]\n" +
-                "   4           Corinna            Ruppel         Crerative                 Usability  [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]\n" +
-                "   5              Karl             Jonas       --------          Software-Entwickler  [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]\n"
-                , client.dump());
+
+        assertEquals("""
+               ID |         Vorname |        Nachname |       Abteilung |                   Rolle |        Expertise 
+               ---+-----------------+-----------------+-----------------+-------------------------+------------------------- 
+                1 |          Sascha |            Alda |              IT |          Projekt-Leiter |[(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]  
+                2 |        Thorsten |           Bonne |       Financial |             Controlling |[(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]  
+                5 |            Karl |           Jonas |     --------    |     Software-Entwickler |[(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]  
+               """ , client.dump());
+        client.enter(4,"Corinna", "Ruppel", "Usability", "Creative", expertise);
+        assertEquals("""
+               ID |         Vorname |        Nachname |       Abteilung |                   Rolle |        Expertise 
+               ---+-----------------+-----------------+-----------------+-------------------------+------------------------- 
+                1 |          Sascha |            Alda |              IT |          Projekt-Leiter |[(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]  
+                2 |        Thorsten |           Bonne |       Financial |             Controlling |[(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]  
+                4 |         Corinna |          Ruppel |        Creative |               Usability |[(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]  
+                5 |            Karl |           Jonas |     --------    |     Software-Entwickler |[(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]  
+               """ , client.dump());
+
+        System.out.println(client.dump());
     }
 
     @Test
@@ -69,16 +76,19 @@ public class TestClient {
         client.enter(1, "Sascha", "Alda", "Projekt-Leiter", "IT", expertise);
         client.enter(2, "Thorsten","Bonne","Controlling", "Financial", expertise);
         client.enter(5, "Karl", "Jonas", "Software-Entwickler", "-", expertise);
-        assertEquals("1 : Sascha Alda, Projekt-Leiter, IT, [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]\n" +
-                "2 : Thorsten Bonne, Controlling, Financial, [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]\n" +
-                "5 : Karl Jonas, Software-Entwickler,  - , [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]\n", client.search("Java"));
+        assertEquals("""
+                1 : Sascha Alda, Projekt-Leiter, IT, [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
+                2 : Thorsten Bonne, Controlling, Financial, [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
+                5 : Karl Jonas, Software-Entwickler, - , [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
+                """, client.search("Java"));
         assertEquals("",client.search("SEO"));
         assertEquals(3,client.size());
         HashMap<String, Expertise> second = new HashMap<>();
         second.put("SEO",Expertise.TopPerformer);
         client.enter(3, "Peter", "Becker", "Controller", "-", second);
-        assertEquals("3 : Peter Becker, Controller,  - , [(SEO : TopPerformer)]\n",client.search("SEO"));
+        assertEquals("3 : Peter Becker, Controller, - , [(SEO : TopPerformer)]\n",client.search("SEO"));
         assertEquals(4,client.size());
+        System.out.println(client.search("Java"));
     }
 
 }
