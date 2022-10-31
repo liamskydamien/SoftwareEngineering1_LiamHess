@@ -1,9 +1,11 @@
 package uebung4.Datastructure;
 
+import uebung4.Exception.ClientException;
 import uebung4.Exception.ContainerException;
 import uebung4.Exception.PersistenceException;
 import uebung4.Model.Interface.Employee;
 import uebung4.Persistance.PersistenceStrategy;
+import uebung4.Persistance.PersistenceStrategyStream;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -68,6 +70,27 @@ public class Container {
             throw new PersistenceException(PersistenceException.ExceptionType.NoStrategyIsSet, "No strategy is set.");
         }
         storage = strategy.load();
+    }
+
+    public void loadAndMerge() throws PersistenceException {
+        if(strategy == null){
+            throw new PersistenceException(PersistenceException.ExceptionType.NoStrategyIsSet, "No strategy is set.");
+        }
+        List<Employee> loadedList = strategy.load();
+        int i = 0;
+        while (!loadedList.isEmpty()){
+            boolean isInside = false;
+            Employee employee = loadedList.remove(i);
+            for (Employee current: storage){
+                if (employee.compareTo(current) == 0) {
+                    isInside = true;
+                    break;
+                }
+            }
+            if(!isInside){
+                storage.add(employee);
+            }
+        }
     }
 
     public List<Employee> getCurrentList(){

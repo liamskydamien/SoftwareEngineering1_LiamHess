@@ -1,7 +1,7 @@
 package uebung4.Exception;
 
 public class ClientException extends Exception{
-    private ClientExceptionType clientExceptionType;
+    private final ClientExceptionType clientExceptionType;
 
     public ClientException(ClientExceptionType clientExceptionType, String message){
         super(message);
@@ -18,6 +18,8 @@ public class ClientException extends Exception{
         IdAlreadyDefined,
         IdIsNotSet,
         DeletionNotPossibleWrongId,
-        Failure
+        Failure,
+        ErrorWhileLoading,
+        ErrorWhileSaving
     }
 }

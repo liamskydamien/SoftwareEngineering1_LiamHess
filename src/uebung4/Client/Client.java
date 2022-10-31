@@ -3,6 +3,7 @@ package uebung4.Client;
 import uebung4.Datastructure.Container;
 import uebung4.Exception.ClientException;
 import uebung4.Exception.ContainerException;
+import uebung4.Exception.PersistenceException;
 import uebung4.Model.Entity.EmployeeConcrete;
 import uebung4.Model.Expertise;
 import uebung4.Model.Interface.Employee;
@@ -53,54 +54,52 @@ public class Client {
         return false;
     }
 
+    public void remove(Integer id) throws ClientException {
+        try {
+            container.deleteEmployee(id);
+        } catch (ContainerException e) {
+            throw new ClientException(ClientException.ClientExceptionType.DeletionNotPossibleWrongId, "Mitarbeiter konnte nicht gelöscht werden.");
+        }
+    }
+
     public String dump(){
         List<Employee> employeeList = container.getCurrentList();
         employeeList.sort(null);
-        String output = """
-                 ID |         Vorname |        Nachname |       Abteilung |                   Rolle |        Expertise
-                 ---+-----------------+-----------------+-----------------+-------------------------+-------------------------
-                        """;
+        StringBuilder output = new StringBuilder("""
+                ID |         Vorname |        Nachname |       Abteilung |                   Rolle |        Expertise
+                ---+-----------------+-----------------+-----------------+-------------------------+-------------------------
+                       """);
         for (Employee employee: employeeList){
-            output = output + makeRow(employee) + "\n";
+            output.append(makeRow(employee)).append("\n");
         }
-        return output;
+        return output.toString();
     }
 
     private String makeRow(Employee employee){
-        String output = "";
-        for(int i = 0; i < 2 - String.valueOf(employee.getID()).length(); i++){
-            output = output + " ";
-        }
-        output = output + employee.getID() + " |";
+        StringBuilder output = new StringBuilder();
+        output.append(" ".repeat(Math.max(0, 2 - String.valueOf(employee.getID()).length())));
+        output.append(employee.getID()).append(" |");
 
-        for(int j = 0; j < 16 - employee.getFirstname().length(); j++){
-            output = output + " ";
-        }
-        output = output + employee.getFirstname() + " |";
+        output.append(" ".repeat(Math.max(0, 16 - employee.getFirstname().length())));
+        output.append(employee.getFirstname()).append(" |");
 
-        for(int u = 0; u < 16 - employee.getLastname().length(); u++){
-            output = output + " ";
-        }
-        output = output + employee.getLastname() + " |";
+        output.append(" ".repeat(Math.max(0, 16 - employee.getLastname().length())));
+        output.append(employee.getLastname()).append(" |");
 
         if(employee.getDepartment() != null) {
-            for (int o = 0; o < 16 - employee.getDepartment().length(); o++) {
-                output = output + " ";
-            }
-            output = output + employee.getDepartment() + " |";
+            output.append(" ".repeat(Math.max(0, 16 - employee.getDepartment().length())));
+            output.append(employee.getDepartment()).append(" |");
         }
         else {
-                output = output + "     --------    |";
+                output.append("     --------    |");
         }
 
-        for(int p = 0; p < 24 - employee.getRole().length(); p++){
-            output = output + " ";
-        }
-        output = output + employee.getRole() + " |";
+        output.append(" ".repeat(Math.max(0, 24 - employee.getRole().length())));
+        output.append(employee.getRole()).append(" |");
 
-        output = output + employee.getExpertiseString();
+        output.append(employee.getExpertiseString());
 
-        return output;
+        return output.toString();
     }
 
     public String search(String expertise){
@@ -116,6 +115,33 @@ public class Client {
             }
         }
         return output.toString();
+    }
+
+    public void load(boolean isForce) throws ClientException {
+        if(isForce){
+            try {
+                container.load();
+            }
+            catch (PersistenceException e){
+                throw new ClientException(ClientException.ClientExceptionType.ErrorWhileLoading, "Fehler beim Laden der File.");
+            }
+        }
+        else {
+            try {
+                container.loadAndMerge();
+            }
+            catch (PersistenceException e){
+                throw new ClientException(ClientException.ClientExceptionType.ErrorWhileLoading, "Fehler beim Laden der File.");
+            }
+        }
+    }
+
+    public void store() throws ClientException {
+        try {
+            container.store();
+        } catch (PersistenceException e) {
+            throw new ClientException(ClientException.ClientExceptionType.ErrorWhileSaving,"Daten konnten nicht gespeichert werden.");
+        }
     }
 
     /* Methoden zum Testen der Klasse */

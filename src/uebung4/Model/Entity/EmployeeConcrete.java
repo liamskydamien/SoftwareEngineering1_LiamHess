@@ -3,10 +3,10 @@ package uebung4.Model.Entity;
 import uebung4.Model.Expertise;
 import uebung4.Model.Interface.Employee;
 
+import java.io.Serializable;
 import java.util.HashMap;
-import java.util.Map;
 
-public class EmployeeConcrete implements Employee {
+public class EmployeeConcrete implements Employee, Serializable {
     private final int id;
     private final String firstname;
     private final String lastname;
@@ -26,6 +26,10 @@ public class EmployeeConcrete implements Employee {
         this.role = role;
         this.department = department;
         this.expertises = expertises;
+    }
+
+    public void changeDeparment(String newDepartment){
+        department = newDepartment;
     }
 
     @Override

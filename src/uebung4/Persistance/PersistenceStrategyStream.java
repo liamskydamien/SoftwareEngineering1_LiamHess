@@ -24,11 +24,6 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
     }
 
     @Override
-    /**
-     * Method for opening the connection to a stream (here: Input- and Output-Stream)
-     * In case of having problems while opening the streams, leave the code in methods load
-     * and save
-     */
     public void openConnection() throws PersistenceException {
         try{
             if (isInput) {
@@ -49,9 +44,6 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
     }
 
     @Override
-    /**
-     * Method for closing the connections to a stream
-     */
     public void closeConnection() throws PersistenceException {
         try {
             if(isInput) {
@@ -72,26 +64,11 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
     }
 
     @Override
-    /**
-     * Method for saving a list of Member-objects to a disk (HDD)
-     */
     public void save(List<E> members) throws PersistenceException  {
         isInput = false;
         //Auslagerung in openConnection
         openConnection();
 
-        /*
-        try {
-        fos = new FileOutputStream(location);
-        oos = new ObjectOutputStream(fos);
-        }
-        catch (FileNotFoundException e) {
-            throw new PersistenceException(PersistenceException.ExceptionType.NoFileFound, "No File found.");
-        }
-        catch (IOException e) {
-            throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "Fail to connect.");
-        }
-         */
 
         try {
             oos.writeObject(members);
@@ -102,25 +79,11 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
         //Auslagerung in closeConnection
         closeConnection();
 
-        /*
-        try {
-            oos.close();
-            fos.close();
-        }
-        catch (IOException e) {
-            throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "Could not close Stream.");
-        }
-         */
 
     }
 
     @Override
     @SuppressWarnings("unchecked")
-    /**
-     * Method for loading a list of Member-objects from a disk (HDD)
-     * Some coding examples come for free :-)
-     * Take also a look at the import statements above ;-!
-     */
     public List<E> load() throws PersistenceException  {
         isInput = true;
         List<E> newList = null;
@@ -128,19 +91,6 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
         //Auslagerung in openConnection
         openConnection();
 
-        /*
-        try {
-            fis = new FileInputStream(location);
-            ois = new ObjectInputStream(fis);
-        }
-        catch (FileNotFoundException e) {
-            throw new PersistenceException(PersistenceException.ExceptionType.NoFileFound, "No File found.");
-        }
-        catch (IOException e) {
-            throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "Fail to connect");
-        }
-
-         */
 
         try {
             Object obj = ois.readObject();
@@ -154,15 +104,6 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
 
         //Auslagerung in closeConnection
         closeConnection();
-        /*
-        try {
-            ois.close();
-            fis.close();
-        }
-        catch (IOException e) {
-            throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "Could not close Stream.");
-        }
-        */
 
         return newList;
     }
