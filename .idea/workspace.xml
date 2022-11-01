@@ -6,13 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Adding save and load">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung4/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung4/Datastructure/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Datastructure/Container.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung4/Exception/ClientException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Exception/ClientException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung4/Model/Entity/EmployeeConcrete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Model/Entity/EmployeeConcrete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung4/Persistance/PersistenceStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Persistance/PersistenceStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung4/Persistance/PersistenceStrategyStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Persistance/PersistenceStrategyStream.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uebung4/Test/TestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Test/TestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung4/employees.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/employees.ser" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,20 +75,7 @@
       <recent name="uebung4.Datastructure" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestClient.testeDump">
-    <configuration name="uebung4.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="uebung4.Main" />
-      <module name="SoftwareEngineering1_LiamHess" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uebung4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestClient.testeLoadAndStoreNegativeTest">
     <configuration name="TestClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SoftwareEngineering1_LiamHess" />
       <extension name="coverage">
@@ -120,6 +102,22 @@
       <option name="PACKAGE_NAME" value="uebung4.Test" />
       <option name="MAIN_CLASS_NAME" value="uebung4.Test.TestClient" />
       <option name="METHOD_NAME" value="testeDump" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestClient.testeLoadAndStoreNegativeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareEngineering1_LiamHess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uebung4.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uebung4.Test" />
+      <option name="MAIN_CLASS_NAME" value="uebung4.Test.TestClient" />
+      <option name="METHOD_NAME" value="testeLoadAndStoreNegativeTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestClient.testeLoadAndStoreNegativeTest" />
         <item itemvalue="JUnit.TestClient.testeDump" />
         <item itemvalue="JUnit.TestClient.testeLoadAndStorePositiveTest" />
         <item itemvalue="JUnit.TestClient.testeSearch" />
         <item itemvalue="JUnit.TestClient" />
-        <item itemvalue="Application.uebung4.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +187,8 @@
       <workItem from="1666184242341" duration="1478000" />
       <workItem from="1666873950191" duration="1860000" />
       <workItem from="1667036971337" duration="7340000" />
-      <workItem from="1667044628431" duration="10525000" />
+      <workItem from="1667044628431" duration="11160000" />
+      <workItem from="1667319034531" duration="1008000" />
     </task>
     <task id="LOCAL-00001" summary="Uebung1">
       <created>1664646708277</created>
@@ -324,7 +323,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667232853543</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Adding save and load">
+      <created>1667236025103</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1667236025103</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Adding save and load">
+      <created>1667239989840</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1667239989840</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,16 +372,5 @@
     <MESSAGE value="Fixing table" />
     <MESSAGE value="Adding save and load" />
     <option name="LAST_COMMIT_MESSAGE" value="Adding save and load" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/uebung4/Client/Client.java</url>
-          <line>142</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

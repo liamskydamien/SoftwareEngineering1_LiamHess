@@ -10,8 +10,7 @@ import uebung4.Persistance.PersistenceStrategyStream;
 
 import java.util.HashMap;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class TestClient {
     private Client client;
@@ -117,4 +116,35 @@ public class TestClient {
         assertEquals(5,client.size());
     }
 
+    @Test
+    void testeLoadAndStoreNegativeTest() throws ClientException {
+        Container container = Container.getInstance();
+        client.enter(1, "Sascha", "Alda", "Projekt-Leiter", "IT", expertise);
+        client.enter(2, "Thorsten","Bonne","Controlling", "Financial", expertise);
+        client.enter(5, "Karl", "Jonas", "Software-Entwickler", "-", expertise);
+        assertEquals(3,client.size());
+        ClientException noStrategy = assertThrows(ClientException.class, client::store);
+        assertEquals(ClientException.ClientExceptionType.ErrorWhileSaving, noStrategy.getClientExceptionType());
+        container.setStrategy(new PersistenceStrategyStream<>());
+        client.store();
+        client.remove(1);
+        client.remove(2);
+        client.remove(5);
+        assertEquals(0,client.size());
+        container.setStrategy(null);
+        ClientException noStrategyLoad = assertThrows(ClientException.class, () -> client.load(true));
+        assertEquals(ClientException.ClientExceptionType.ErrorWhileLoading, noStrategyLoad.getClientExceptionType());
+        container.setStrategy(new PersistenceStrategyStream<>());
+        client.enter(1, "Sigrid", "Weil", "Projekt-Leiter", "IT", expertise);
+        client.enter(2, "Thorsten","Dum","Controlling", "Financial", expertise);
+        client.load(false);
+        assertEquals(3,client.size());
+        assertEquals("""
+               ID |         Vorname |        Nachname |       Abteilung |                   Rolle |        Expertise
+               ---+-----------------+-----------------+-----------------+-------------------------+-------------------------
+                1 |          Sigrid |            Weil |              IT |          Projekt-Leiter |[(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
+                2 |        Thorsten |             Dum |       Financial |             Controlling |[(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
+                5 |            Karl |           Jonas |     --------    |     Software-Entwickler |[(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
+               """ , client.dump());
+    }
 }
