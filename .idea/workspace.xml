@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Adding save and load">
+    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Adding EdgeCase Test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung4/Test/TestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Test/TestClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung4/employees.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/employees.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,18 +74,16 @@
       <recent name="uebung4.Datastructure" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestClient.testeLoadAndStoreNegativeTest">
-    <configuration name="TestClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="uebung4.Main" />
       <module name="SoftwareEngineering1_LiamHess" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uebung4.Test.*" />
+          <option name="PATTERN" value="uebung4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="uebung4.Test" />
-      <option name="MAIN_CLASS_NAME" value="uebung4.Test.TestClient" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -157,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.TestClient.testeLoadAndStoreNegativeTest" />
         <item itemvalue="JUnit.TestClient.testeDump" />
         <item itemvalue="JUnit.TestClient.testeLoadAndStorePositiveTest" />
         <item itemvalue="JUnit.TestClient.testeSearch" />
-        <item itemvalue="JUnit.TestClient" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +185,7 @@
       <workItem from="1666873950191" duration="1860000" />
       <workItem from="1667036971337" duration="7340000" />
       <workItem from="1667044628431" duration="11160000" />
-      <workItem from="1667319034531" duration="1008000" />
+      <workItem from="1667319034531" duration="3930000" />
     </task>
     <task id="LOCAL-00001" summary="Uebung1">
       <created>1664646708277</created>
@@ -337,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667239989840</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Adding EdgeCase Test">
+      <created>1667320171501</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1667320171501</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,6 +375,7 @@
     <MESSAGE value="adding search" />
     <MESSAGE value="Fixing table" />
     <MESSAGE value="Adding save and load" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding save and load" />
+    <MESSAGE value="Adding EdgeCase Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding EdgeCase Test" />
   </component>
 </project>
