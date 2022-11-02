@@ -64,6 +64,9 @@ public class EmployeeConcrete implements Employee, Serializable {
 
     @Override
     public String getExpertiseString(){
+        if(expertises.isEmpty()){
+            return "";
+        }
         StringBuilder output = new StringBuilder("[");
         for (HashMap.Entry<String, Expertise> expertiseEntry: expertises.entrySet()) {
             output.append("(").append(expertiseEntry.getKey()).append(" : ");

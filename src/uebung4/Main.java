@@ -7,6 +7,7 @@ import uebung4.Model.Expertise;
 import uebung4.Persistance.PersistenceStrategyStream;
 
 import java.util.HashMap;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class Main {
@@ -16,7 +17,7 @@ public class Main {
         container.setStrategy(new PersistenceStrategyStream<>());
         Scanner scanner = new Scanner(System.in);
         System.out.println("Willkommen. Mit dem Befehl \"help\" bekommen Sie eine Übersicht über alle Befehle.");
-        while(scanner.hasNext()){
+        while(scanner.hasNextLine()){
             String currentLine = scanner.nextLine();
             Scanner lineScanner = new Scanner(currentLine);
             switch (lineScanner.next()){
@@ -24,7 +25,7 @@ public class Main {
                     System.out.println("""
                             Hier ist eine Sammlung aller gültigen Befehle:
                             help    gibt eine Liste aller möglichen Befehle aus.
-                            load [Force / Merge] lädt eine vorherige Datensammlung in den RAM Speicher. 
+                            load [Force / Merge] lädt eine vorherige Datensammlung in den RAM Speicher.
                                 Force signalisiert eine komplette neubeladung und ignoriert bestehende Mitarbeiter
                                 Merge mischt die bestehnenden Mitarbeiter mit den gespeicherten (Doppelte IDs, werden nicht beachtet!)
                             store   speichert die aktuell im RAM befindliche Liste
@@ -38,7 +39,7 @@ public class Main {
                     break;
                 case "load":
                     try {
-                        String isForce = scanner.next();
+                        String isForce = lineScanner.next();
                         if(isForce.equals("Force")){
                             client.load(true);
                             System.out.println("Laden mittels Merge erfolgreich.");
@@ -91,15 +92,12 @@ public class Main {
                         HashMap<String, Expertise> expertise = new HashMap<>();
                         while (lineScanner.hasNext()) {
                             String[] expertiseAndLevel = lineScanner.next().split(":");
-                            Expertise expertiseType = null;
+                            Expertise expertiseType;
                             switch (expertiseAndLevel[1]) {
                                 case "Beginner" -> expertiseType = Expertise.Beginner;
                                 case "Experte" -> expertiseType = Expertise.Experte;
                                 case "TopPerformer" -> expertiseType = Expertise.TopPerformer;
-                                default -> {
-                                    System.out.println("Ungültiges Expertisen Level. Bitte erneut versuchen.");
-                                    throw new RuntimeException();
-                                }
+                                default -> throw new RuntimeException("Ungültiges Expertisen Level. Bitte erneut versuchen.");
                             }
                             expertise.put(expertiseAndLevel[0], expertiseType);
                         }
@@ -111,8 +109,12 @@ public class Main {
                             System.out.println(exception.getMessage());
                         }
                     }
+                    catch (NoSuchElementException exception){
+                        System.out.println("Zu wenig Eingabeparameter. Bitte probieren Sie es erneut.");
+                        break;
+                    }
                     catch (Exception e){
-                        System.out.println("Ungültige Eingabe. Probieren Sie es erneut.");
+                        System.out.println(e.getMessage());
                         break;
                     }
                     break;
