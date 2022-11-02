@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Adding dialog (not finished)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung4/Model/Entity/EmployeeConcrete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Model/Entity/EmployeeConcrete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung4/employees.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/employees.ser" afterDir="false" />
-    </list>
+    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Finish" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -187,7 +182,7 @@
       <workItem from="1666873950191" duration="1860000" />
       <workItem from="1667036971337" duration="7340000" />
       <workItem from="1667044628431" duration="11160000" />
-      <workItem from="1667319034531" duration="5515000" />
+      <workItem from="1667319034531" duration="5648000" />
     </task>
     <task id="LOCAL-00001" summary="Uebung1">
       <created>1664646708277</created>
@@ -350,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667323195089</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Finish">
+      <created>1667377882564</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1667377882564</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,6 +388,7 @@
     <MESSAGE value="Adding save and load" />
     <MESSAGE value="Adding EdgeCase Test" />
     <MESSAGE value="Adding dialog (not finished)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding dialog (not finished)" />
+    <MESSAGE value="Finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish" />
   </component>
 </project>

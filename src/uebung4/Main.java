@@ -10,6 +10,10 @@ import java.util.HashMap;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
+/**
+ * @author Liam Hess
+ * @version 1.0
+ */
 public class Main {
     public static void main(String[] args) {
         Client client = new Client();

@@ -11,6 +11,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * @author Liam Hess
+ * @version 1.0
+ */
+
 public class Container {
     private static Container instance;
     private List<Employee> storage = new ArrayList<>();

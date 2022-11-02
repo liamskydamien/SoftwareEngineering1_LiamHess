@@ -12,6 +12,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @author Liam Hess
+ * @version 1.0
+ */
+
 public class Client {
     private final Container container = Container.getInstance();
 
