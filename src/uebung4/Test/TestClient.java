@@ -12,6 +12,10 @@ import java.util.HashMap;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * @author Liam Hess
+ * @version 2.0
+ */
 public class TestClient {
     private Client client;
     private final HashMap<String, Expertise> expertise = createHashMap();
@@ -27,6 +31,7 @@ public class TestClient {
     @BeforeEach
     void setup(){
         client = new Client();
+        client.wipeMemory();
     }
 
     @Test
@@ -53,23 +58,34 @@ public class TestClient {
         assertEquals(3,client.size());
 
         assertEquals("""
-               ID |         Vorname |        Nachname |       Abteilung |                   Rolle |        Expertise
-               ---+-----------------+-----------------+-----------------+-------------------------+-------------------------
-                1 |          Sascha |            Alda |              IT |          Projekt-Leiter |[(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
-                2 |        Thorsten |           Bonne |       Financial |             Controlling |[(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
-                5 |            Karl |           Jonas |     --------    |     Software-Entwickler |[(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
-               """ , client.dump());
+                   ID |       Vorname |      Nachname |                         Rolle |     Abteilung |        Expertise
+                ------+---------------+---------------+-------------------------------+---------------+-------------------------------------------------------
+                    1 |        Sascha |          Alda |                Projekt-Leiter |            IT | [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
+                    2 |      Thorsten |         Bonne |                   Controlling |     Financial | [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
+                    5 |          Karl |         Jonas |           Software-Entwickler |             - | [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
+                """ , client.dump("Alle"));
         client.enter(4,"Corinna", "Ruppel", "Usability", "Creative", expertise);
         assertEquals("""
-               ID |         Vorname |        Nachname |       Abteilung |                   Rolle |        Expertise
-               ---+-----------------+-----------------+-----------------+-------------------------+-------------------------
-                1 |          Sascha |            Alda |              IT |          Projekt-Leiter |[(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
-                2 |        Thorsten |           Bonne |       Financial |             Controlling |[(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
-                4 |         Corinna |          Ruppel |        Creative |               Usability |[(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
-                5 |            Karl |           Jonas |     --------    |     Software-Entwickler |[(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
-               """ , client.dump());
-
-        System.out.println(client.dump());
+                 ID |       Vorname |      Nachname |                         Rolle |     Abteilung |        Expertise
+              ------+---------------+---------------+-------------------------------+---------------+-------------------------------------------------------
+                  1 |        Sascha |          Alda |                Projekt-Leiter |            IT | [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
+                  2 |      Thorsten |         Bonne |                   Controlling |     Financial | [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
+                  4 |       Corinna |        Ruppel |                     Usability |      Creative | [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
+                  5 |          Karl |         Jonas |           Software-Entwickler |             - | [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
+               """ , client.dump("Alle"));
+        assertEquals("""
+                 ID |       Vorname |      Nachname |                         Rolle |     Abteilung |        Expertise
+              ------+---------------+---------------+-------------------------------+---------------+-------------------------------------------------------
+                  1 |        Sascha |          Alda |                Projekt-Leiter |            IT | [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
+                  """,client.dump("IT"));
+        client.enter(0, "Andreas", "Priesnitz", "Software-Tester", "IT", expertise);
+        assertEquals("""
+                 ID |       Vorname |      Nachname |                         Rolle |     Abteilung |        Expertise
+              ------+---------------+---------------+-------------------------------+---------------+-------------------------------------------------------
+                  0 |       Andreas |     Priesnitz |               Software-Tester |            IT | [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
+                  1 |        Sascha |          Alda |                Projekt-Leiter |            IT | [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
+                  """,client.dump("IT"));
+        System.out.println(client.dump("Alle"));
     }
 
     @Test
@@ -119,6 +135,7 @@ public class TestClient {
     @Test
     void testeLoadAndStoreNegativeTest() throws ClientException {
         Container container = Container.getInstance();
+        container.setStrategy(null);
         client.enter(1, "Sascha", "Alda", "Projekt-Leiter", "IT", expertise);
         client.enter(2, "Thorsten","Bonne","Controlling", "Financial", expertise);
         client.enter(5, "Karl", "Jonas", "Software-Entwickler", "-", expertise);
@@ -140,11 +157,11 @@ public class TestClient {
         client.load(false);
         assertEquals(3,client.size());
         assertEquals("""
-               ID |         Vorname |        Nachname |       Abteilung |                   Rolle |        Expertise
-               ---+-----------------+-----------------+-----------------+-------------------------+-------------------------
-                1 |          Sigrid |            Weil |              IT |          Projekt-Leiter |[(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
-                2 |        Thorsten |             Dum |       Financial |             Controlling |[(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
-                5 |            Karl |           Jonas |     --------    |     Software-Entwickler |[(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
-               """ , client.dump());
+                   ID |       Vorname |      Nachname |                         Rolle |     Abteilung |        Expertise
+                ------+---------------+---------------+-------------------------------+---------------+-------------------------------------------------------
+                    1 |        Sigrid |          Weil |                Projekt-Leiter |            IT | [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
+                    2 |      Thorsten |           Dum |                   Controlling |     Financial | [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
+                    5 |          Karl |         Jonas |           Software-Entwickler |             - | [(Java : Experte),(SCRUM : Beginner),(SQL : TopPerformer)]
+                """ , client.dump("Alle"));
     }
 }

@@ -75,8 +75,14 @@ public class Main {
                     }
                     break;
                 case "dump":
-                    System.out.println(client.dump());
-                    break;
+                    try {
+                        System.out.println(client.dump(lineScanner.next()));
+                        break;
+                    }
+                    catch (NoSuchElementException e){
+                        System.out.println("Zu wenig Eingabeparameter. Falls Sie nach Mitarbeitern in allen Abteilungen suchen, geben Sie bitte dump Alle ein, sonst dump \"Abteilung\" Bitte probieren Sie es erneut.");
+                        break;
+                    }
                 case "search":
                     try{
                         String parameter = lineScanner.next();

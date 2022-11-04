@@ -54,7 +54,7 @@ public class EmployeeConcrete implements Employee, Serializable {
 
     @Override
     public String getDepartment() {
-        return department;
+        return department == null? "-": department;
     }
 
     @Override

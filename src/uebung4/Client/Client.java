@@ -8,9 +8,11 @@ import uebung4.Model.Entity.EmployeeConcrete;
 import uebung4.Model.Expertise;
 import uebung4.Model.Interface.Employee;
 
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Stream;
 
 /**
  * @author Liam Hess
@@ -67,13 +69,22 @@ public class Client {
         }
     }
 
-    public String dump(){
-        List<Employee> employeeList = container.getCurrentList();
-        employeeList.sort(null);
-        StringBuilder output = new StringBuilder("""
-                ID |         Vorname |        Nachname |       Abteilung |                   Rolle |        Expertise
-                ---+-----------------+-----------------+-----------------+-------------------------+-------------------------
-                       """);
+    public String dump(String abteilung){
+        List<Employee> employeeList;
+        if(abteilung.equals("Alle")) {
+            employeeList = container.getCurrentList();
+            employeeList.sort(null);
+        }
+        else {
+            employeeList = container.getCurrentList()
+                                        .stream()
+                                        .filter((e) -> e.getDepartment().equals(abteilung))
+                                        .sorted(Comparator.comparingInt(Employee::getID))
+                                        .toList();
+        }
+        StringBuilder output = new StringBuilder();
+        output.append(String.format("%8s%16s%16s%32s%16s%16s", "ID | ", "Vorname | ", "Nachname | ", "Rolle | ", "Abteilung | ", "Expertise")).append("\n");
+        output.append("------+---------------+---------------+-------------------------------+---------------+-------------------------------------------------------").append("\n");
         for (Employee employee: employeeList){
             output.append(makeRow(employee)).append("\n");
         }
@@ -81,45 +92,26 @@ public class Client {
     }
 
     private String makeRow(Employee employee){
-        StringBuilder output = new StringBuilder();
-        output.append(" ".repeat(Math.max(0, 2 - String.valueOf(employee.getID()).length())));
-        output.append(employee.getID()).append(" |");
-
-        output.append(" ".repeat(Math.max(0, 16 - employee.getFirstname().length())));
-        output.append(employee.getFirstname()).append(" |");
-
-        output.append(" ".repeat(Math.max(0, 16 - employee.getLastname().length())));
-        output.append(employee.getLastname()).append(" |");
-
-        if(employee.getDepartment() != null) {
-            output.append(" ".repeat(Math.max(0, 16 - employee.getDepartment().length())));
-            output.append(employee.getDepartment()).append(" |");
-        }
-        else {
-                output.append("     --------    |");
-        }
-
-        output.append(" ".repeat(Math.max(0, 24 - employee.getRole().length())));
-        output.append(employee.getRole()).append(" |");
-
-        output.append(employee.getExpertiseString());
-
-        return output.toString();
+        return String.format("%8s%16s%16s%32s%16s%16s",
+                employee.getID()+ " | ",
+                employee.getFirstname() + " | ",
+                employee.getLastname() + " | ",
+                employee.getRole() + " | ",
+                employee.getDepartment() + " | ",
+                employee.getExpertiseString());
     }
 
     public String search(String expertise){
-        List<Employee> list = container.getCurrentList();
-        list.sort(null);
-        StringBuilder output = new StringBuilder();
+        List<Employee> list = container.getCurrentList()
+                .stream()
+                .filter((e) -> e.getExpertise().containsKey(expertise))
+                .sorted(Comparator.comparingInt(Employee::getID))
+                .toList();
+        StringBuilder stringBuilder = new StringBuilder();
         for (Employee employee: list){
-            HashMap<String, Expertise> hashMap = employee.getExpertise();
-            for (HashMap.Entry<String, Expertise> expertiseEntry: hashMap.entrySet()){
-                if(expertiseEntry.getKey().equals(expertise)){
-                    output.append(employee).append("\n");
-                }
-            }
+            stringBuilder.append(employee).append("\n");
         }
-        return output.toString();
+        return stringBuilder.toString();
     }
 
     public void load(boolean isForce) throws ClientException {
@@ -152,6 +144,10 @@ public class Client {
     /* Methoden zum Testen der Klasse */
     public int size(){
         return container.size();
+    }
+
+    public void wipeMemory(){
+        container.wipeContainer();
     }
 
 }

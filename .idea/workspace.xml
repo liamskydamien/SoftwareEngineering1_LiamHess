@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Finish" />
+    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Finish">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung4/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung4/Datastructure/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Datastructure/Container.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung4/Model/Entity/EmployeeConcrete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Model/Entity/EmployeeConcrete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung4/Test/TestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Test/TestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung4/employees.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/employees.ser" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +79,7 @@
       <recent name="uebung4.Datastructure" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.TestClient">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="uebung4.Main" />
       <module name="SoftwareEngineering1_LiamHess" />
@@ -81,6 +89,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareEngineering1_LiamHess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uebung4.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uebung4.Test" />
+      <option name="MAIN_CLASS_NAME" value="uebung4.Test.TestClient" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -117,22 +140,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestClient.testeLoadAndStorePositiveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SoftwareEngineering1_LiamHess" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uebung4.Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uebung4.Test" />
-      <option name="MAIN_CLASS_NAME" value="uebung4.Test.TestClient" />
-      <option name="METHOD_NAME" value="testeLoadAndStorePositiveTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestClient.testeSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SoftwareEngineering1_LiamHess" />
       <extension name="coverage">
@@ -151,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.TestClient.testeLoadAndStoreNegativeTest" />
+        <item itemvalue="JUnit.TestClient" />
         <item itemvalue="JUnit.TestClient.testeDump" />
-        <item itemvalue="JUnit.TestClient.testeLoadAndStorePositiveTest" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.TestClient.testeSearch" />
+        <item itemvalue="JUnit.TestClient.testeLoadAndStoreNegativeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -183,6 +190,12 @@
       <workItem from="1667036971337" duration="7340000" />
       <workItem from="1667044628431" duration="11160000" />
       <workItem from="1667319034531" duration="5648000" />
+      <workItem from="1667382179515" duration="175000" />
+      <workItem from="1667387413111" duration="116000" />
+      <workItem from="1667392295037" duration="171000" />
+      <workItem from="1667393332618" duration="2221000" />
+      <workItem from="1667478519741" duration="59000" />
+      <workItem from="1667579764664" duration="4724000" />
     </task>
     <task id="LOCAL-00001" summary="Uebung1">
       <created>1664646708277</created>
@@ -352,7 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667377882564</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Finish">
+      <created>1667382327891</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1667382327891</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

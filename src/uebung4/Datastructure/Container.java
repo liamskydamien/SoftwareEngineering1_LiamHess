@@ -101,4 +101,9 @@ public class Container {
     public List<Employee> getCurrentList(){
         return storage;
     }
+
+    // Für Test-Zwecke
+    public void wipeContainer(){
+        storage = new ArrayList<>();
+    }
 }
