@@ -33,7 +33,7 @@ public class Main {
                                 Force signalisiert eine komplette neubeladung und ignoriert bestehende Mitarbeiter
                                 Merge mischt die bestehnenden Mitarbeiter mit den gespeicherten (Doppelte IDs, werden nicht beachtet!)
                             store   speichert die aktuell im RAM befindliche Liste
-                            dump    gibt die aktuell im RAM befindlichen Mitarbeiter tabellarisch und nach ID sortiert aus.
+                            dump [Abteilung / Alle]  gibt die aktuell im RAM befindlichen Mitarbeiter tabellarisch und nach ID sortiert aus.
                             search  [Expertise]     gibt alle Mitarbeirter nach ID sortiert aus die diese Expertise besitzen.
                             enter [ID] [Vorname] [Nachname] [Rolle] [Abteilung / -] [Expertise1:Level] ... [ExpertiseN:Level]
                                 fügt einen neuen Mitarbeiter in den RAM ein. Bitte beachte das falls dieser keine Abteilung hat diese mit - angeben werden muss.
