@@ -4,7 +4,10 @@ import uebung4.Exception.PersistenceException;
 
 import java.io.*;
 import java.util.List;
-
+/**
+ * @author Liam Hess
+ * @version 2.0
+ */
 public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
 
     // URL of file, in which the objects are stored

@@ -1,8 +1,11 @@
 package uebung4.Exception;
-
+/**
+ * @author Liam Hess
+ * @version 1.0
+ */
 public class PersistenceException extends Exception {
 
-    private ExceptionType exceptionType;
+    private final ExceptionType exceptionType;
 
     public ExceptionType getExceptionTypeType() {
         return this.exceptionType;

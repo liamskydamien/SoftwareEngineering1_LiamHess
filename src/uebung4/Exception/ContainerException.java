@@ -1,7 +1,10 @@
 package uebung4.Exception;
-
+/**
+ * @author Liam Hess
+ * @version 1.0
+ */
 public class ContainerException extends Exception {
-    private ContainerExceptionType exceptionType;
+    private final ContainerExceptionType exceptionType;
     public ContainerException(ContainerExceptionType exceptionType,String message){
         super(message);
         this.exceptionType = exceptionType;

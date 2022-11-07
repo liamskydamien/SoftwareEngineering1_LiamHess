@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Finish" />
+    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Finish">
+      <change afterPath="$PROJECT_DIR$/src/uebung4/Utility/Setup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung4/Exception/ClientException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Exception/ClientException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung4/Exception/ContainerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Exception/ContainerException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung4/Exception/PersistenceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Exception/PersistenceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung4/Model/Entity/EmployeeConcrete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Model/Entity/EmployeeConcrete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung4/Model/Expertise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Model/Expertise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung4/Model/Interface/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Model/Interface/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung4/Persistance/PersistenceStrategyStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Persistance/PersistenceStrategyStream.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -188,6 +199,8 @@
       <workItem from="1667393332618" duration="2221000" />
       <workItem from="1667478519741" duration="59000" />
       <workItem from="1667579764664" duration="4980000" />
+      <workItem from="1667639058172" duration="204000" />
+      <workItem from="1667839692012" duration="432000" />
     </task>
     <task id="LOCAL-00001" summary="Uebung1">
       <created>1664646708277</created>
@@ -371,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667584780476</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Finish">
+      <created>1667639237077</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1667639237077</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

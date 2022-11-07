@@ -1,5 +1,8 @@
 package uebung4.Exception;
-
+/**
+ * @author Liam Hess
+ * @version 1.0
+ */
 public class ClientException extends Exception{
     private final ClientExceptionType clientExceptionType;
 

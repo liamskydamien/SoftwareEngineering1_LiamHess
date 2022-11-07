@@ -5,6 +5,7 @@ import uebung4.Datastructure.Container;
 import uebung4.Exception.ClientException;
 import uebung4.Model.Expertise;
 import uebung4.Persistance.PersistenceStrategyStream;
+import uebung4.Utility.Setup;
 
 import java.util.HashMap;
 import java.util.NoSuchElementException;
@@ -16,11 +17,10 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) {
-        Client client = new Client();
-        Container container = Container.getInstance();
-        container.setStrategy(new PersistenceStrategyStream<>());
+        Client client = Setup.setupClient();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Willkommen. Mit dem Befehl \"help\" bekommen Sie eine Übersicht über alle Befehle.");
+        System.out.print(">");
         while(scanner.hasNextLine()){
             String currentLine = scanner.nextLine();
             Scanner lineScanner = new Scanner(currentLine);
@@ -136,6 +136,7 @@ public class Main {
                     System.out.println("Eingabe leider ungültig. Bitte verwenden Sie \"help\" um eine Liste aller gültigen Befehle zu bekommen und probieren es erneut.");
                     break;
             }
+            System.out.print(">");
         }
     }
 }

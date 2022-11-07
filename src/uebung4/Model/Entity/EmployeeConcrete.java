@@ -6,6 +6,10 @@ import uebung4.Model.Interface.Employee;
 import java.io.Serializable;
 import java.util.HashMap;
 
+/**
+ * @author Liam Hess
+ * @version 1.0
+ */
 public class EmployeeConcrete implements Employee, Serializable {
     private final int id;
     private final String firstname;
