@@ -1,4 +1,4 @@
-package uebung9;
+package uebung9.Document;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +25,10 @@ public class ComplexDocument extends DocumentImplementation{
     }
 
     private int traverse(){
-        return inhalt.stream().reduce(0, (partialResult, document) -> partialResult + document.size(), Integer::sum);
+        int sum = 0;
+        for (Document document : inhalt){
+            sum += document.size();
+        }
+        return sum;
     }
 }

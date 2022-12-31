@@ -1,4 +1,4 @@
-package uebung9;
+package uebung9.Document;
 
 public class GraphicDocument extends CoreDocument{
 

@@ -1,4 +1,4 @@
-package uebung9;
+package uebung9.Document;
 
 public enum EncodingTypes {
     UTF8("UTF-8"),

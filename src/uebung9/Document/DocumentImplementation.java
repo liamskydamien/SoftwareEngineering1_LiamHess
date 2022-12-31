@@ -1,4 +1,4 @@
-package uebung9;
+package uebung9.Document;
 
 public abstract class DocumentImplementation implements Document{
     private int id;
