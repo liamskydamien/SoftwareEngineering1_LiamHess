@@ -4,31 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Finish">
-      <change afterPath="$PROJECT_DIR$/src/uebung4/Utility/Setup.java" afterDir="false" />
+    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Adding some fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung4/Exception/ClientException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Exception/ClientException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung4/Exception/ContainerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Exception/ContainerException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung4/Exception/PersistenceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Exception/PersistenceException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung4/Model/Entity/EmployeeConcrete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Model/Entity/EmployeeConcrete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung4/Model/Expertise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Model/Expertise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung4/Model/Interface/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Model/Interface/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung4/Persistance/PersistenceStrategyStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung4/Persistance/PersistenceStrategyStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung1/control/GermanTranslator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung1/control/Translator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung1/test/GermanTranslatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung1/utility/TranslatorFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung1/view/Client.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Enum" />
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -37,6 +24,13 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -57,12 +51,11 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Liams/OneDrive/Desktop/SoftwareEngineering1_LiamHess_Clean/src/uebung4/Persistance&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Liams/OneDrive/Desktop/SoftwareEngineering1_LiamHess/src/uebung3&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;ChangesTree.GroupingKeys&quot;: [
@@ -73,87 +66,75 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Liams\OneDrive\Desktop\SoftwareEngineering1_LiamHess_Clean\src\uebung4\Persistance" />
       <recent name="C:\Users\Liams\OneDrive\Desktop\SoftwareEngineering1_LiamHess\src\uebung3" />
       <recent name="C:\Users\Liams\OneDrive\Desktop\SoftwareEngineering1_LiamHess\src" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="uebung4.Exception" />
-      <recent name="uebung4.Datastructure" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.ContainerTest.testeKorrektesSzenario">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="uebung4.Main" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="SoftwareEngineering1_LiamHess" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uebung4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContainerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SoftwareEngineering1_LiamHess" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uebung4.Test.*" />
+          <option name="PATTERN" value="uebung3.Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="uebung4.Test" />
-      <option name="MAIN_CLASS_NAME" value="uebung4.Test.TestClient" />
+      <option name="PACKAGE_NAME" value="uebung3.Tests" />
+      <option name="MAIN_CLASS_NAME" value="uebung3.Tests.ContainerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestClient.testeDump" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContainerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SoftwareEngineering1_LiamHess" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uebung4.Test.*" />
+          <option name="PATTERN" value="uebung2.Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="uebung4.Test" />
-      <option name="MAIN_CLASS_NAME" value="uebung4.Test.TestClient" />
-      <option name="METHOD_NAME" value="testeDump" />
+      <option name="PACKAGE_NAME" value="uebung2.Tests" />
+      <option name="MAIN_CLASS_NAME" value="uebung2.Tests.ContainerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContainerTest.testeEingabeVonNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareEngineering1_LiamHess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uebung2.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uebung2.Tests" />
+      <option name="MAIN_CLASS_NAME" value="uebung2.Tests.ContainerTest" />
+      <option name="METHOD_NAME" value="testeEingabeVonNull" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestClient.testeLoadAndStoreNegativeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContainerTest.testeKorrektesSzenario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SoftwareEngineering1_LiamHess" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uebung4.Test.*" />
+          <option name="PATTERN" value="uebung3.Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="uebung4.Test" />
-      <option name="MAIN_CLASS_NAME" value="uebung4.Test.TestClient" />
-      <option name="METHOD_NAME" value="testeLoadAndStoreNegativeTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestClient.testeSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SoftwareEngineering1_LiamHess" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uebung4.Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uebung4.Test" />
-      <option name="MAIN_CLASS_NAME" value="uebung4.Test.TestClient" />
-      <option name="METHOD_NAME" value="testeSearch" />
+      <option name="PACKAGE_NAME" value="uebung3.Tests" />
+      <option name="MAIN_CLASS_NAME" value="uebung3.Tests.ContainerTest" />
+      <option name="METHOD_NAME" value="testeKorrektesSzenario" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -161,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ContainerTest.testeKorrektesSzenario" />
+        <item itemvalue="JUnit.ContainerTest (1)" />
+        <item itemvalue="JUnit.ContainerTest" />
+        <item itemvalue="JUnit.ContainerTest.testeEingabeVonNull" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.TestClient" />
-        <item itemvalue="JUnit.TestClient.testeDump" />
-        <item itemvalue="JUnit.TestClient.testeSearch" />
-        <item itemvalue="JUnit.TestClient.testeLoadAndStoreNegativeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -189,18 +170,9 @@
       <workItem from="1666182938392" duration="400000" />
       <workItem from="1666183568860" duration="364000" />
       <workItem from="1666184242341" duration="1478000" />
-      <workItem from="1666873950191" duration="1860000" />
-      <workItem from="1667036971337" duration="7340000" />
-      <workItem from="1667044628431" duration="11160000" />
-      <workItem from="1667319034531" duration="5648000" />
-      <workItem from="1667382179515" duration="175000" />
-      <workItem from="1667387413111" duration="116000" />
-      <workItem from="1667392295037" duration="171000" />
-      <workItem from="1667393332618" duration="2221000" />
-      <workItem from="1667478519741" duration="59000" />
-      <workItem from="1667579764664" duration="4980000" />
-      <workItem from="1667639058172" duration="204000" />
-      <workItem from="1667839692012" duration="432000" />
+      <workItem from="1671534023142" duration="128000" />
+      <workItem from="1671891093011" duration="10000" />
+      <workItem from="1673528948633" duration="319000" />
     </task>
     <task id="LOCAL-00001" summary="Uebung1">
       <created>1664646708277</created>
@@ -265,133 +237,7 @@
       <option name="project" value="LOCAL" />
       <updated>1666183749044</updated>
     </task>
-    <task id="LOCAL-00010" summary="Setup Uebung4">
-      <created>1666874613174</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1666874613174</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Employee">
-      <created>1666875398796</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1666875398796</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Start refactoring">
-      <created>1666875629354</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1666875629354</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Refactor Container">
-      <created>1667037839857</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1667037839857</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Refactor PersitanceStream">
-      <created>1667037961758</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1667037961758</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Adding Client and Enter Method">
-      <created>1667040047723</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1667040047723</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Adding enter and dump and Testclass">
-      <created>1667044375201</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1667044375201</updated>
-    </task>
-    <task id="LOCAL-00017" summary="adding search">
-      <created>1667049350383</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1667049350383</updated>
-    </task>
-    <task id="LOCAL-00018" summary="adding search">
-      <created>1667049431213</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1667049431213</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Fixing table">
-      <created>1667232853543</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1667232853543</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Adding save and load">
-      <created>1667236025103</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1667236025103</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Adding save and load">
-      <created>1667239989840</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1667239989840</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Adding EdgeCase Test">
-      <created>1667320171501</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1667320171501</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Adding dialog (not finished)">
-      <created>1667323195089</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1667323195089</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Finish">
-      <created>1667377882564</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1667377882564</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Finish">
-      <created>1667382327891</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1667382327891</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Finish">
-      <created>1667584780476</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1667584780476</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Finish">
-      <created>1667639237077</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1667639237077</updated>
-    </task>
-    <option name="localTasksCounter" value="28" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,19 +261,6 @@
     <MESSAGE value="Add First Tests" />
     <MESSAGE value="Fix tests" />
     <MESSAGE value="uebung3 setup" />
-    <MESSAGE value="Setup Uebung4" />
-    <MESSAGE value="Employee" />
-    <MESSAGE value="Start refactoring" />
-    <MESSAGE value="Refactor Container" />
-    <MESSAGE value="Refactor PersitanceStream" />
-    <MESSAGE value="Adding Client and Enter Method" />
-    <MESSAGE value="Adding enter and dump and Testclass" />
-    <MESSAGE value="adding search" />
-    <MESSAGE value="Fixing table" />
-    <MESSAGE value="Adding save and load" />
-    <MESSAGE value="Adding EdgeCase Test" />
-    <MESSAGE value="Adding dialog (not finished)" />
-    <MESSAGE value="Finish" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="uebung3 setup" />
   </component>
 </project>
