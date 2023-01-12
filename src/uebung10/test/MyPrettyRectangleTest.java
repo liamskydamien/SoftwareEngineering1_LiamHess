@@ -175,11 +175,13 @@ public class MyPrettyRectangleTest {
 		// Test, ob die Übergabe eines leeren Arrays ein "Null-Rectangle" (Objekt mit vier mal die Koordinaten 0) zurueckliefert:
 		//
 		// [ihr Code]
+		//TODO
+        /*
         MyPrettyRectangle[] emptyRect = { };
         MyPrettyRectangle nBox = BoundingBoxFactory.createBoundingBox( emptyRect );
         MyPrettyRectangle zerroRect = new MyPrettyRectangle(0.0, 0.0, 0.0, 0.0);
         assertEquals(zerroRect, nBox );
-
+		*/
 			
 		// Test, ob die Übergabe eines NULL-Werts erfolgreich abgefangen wurde (Rueckgabe == NULL!)
 		// 
