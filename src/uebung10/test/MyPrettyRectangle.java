@@ -40,4 +40,12 @@ public class MyPrettyRectangle {
                 middle.getTopRight().getX() <= topRight.getX() &
                 middle.getTopRight().getY() <= topRight.getY();
     }
+
+    public double getArea(){
+        return (topRight.getX() - bottomLeft.getX()) * (topRight.getY() - bottomLeft.getY());
+    }
+
+    public double getPerimeter(){
+        return (topRight.getX() - bottomLeft.getX()) * 2 + (topRight.getY() - bottomLeft.getY()) * 2;
+    }
 }
