@@ -8,6 +8,11 @@ public class MyPrettyRectangle {
         topRight = new MyPoint(v2,v3);
     }
 
+    public MyPrettyRectangle(MyPoint bottomLeft, MyPoint topRight){
+        this.bottomLeft = bottomLeft;
+        this.topRight = topRight;
+    }
+
     public MyPoint getTopRight() {
         return topRight;
     }

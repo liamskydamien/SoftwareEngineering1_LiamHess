@@ -176,12 +176,11 @@ public class MyPrettyRectangleTest {
 		//
 		// [ihr Code]
 		//TODO
-        /*
+
         MyPrettyRectangle[] emptyRect = { };
         MyPrettyRectangle nBox = BoundingBoxFactory.createBoundingBox( emptyRect );
         MyPrettyRectangle zerroRect = new MyPrettyRectangle(0.0, 0.0, 0.0, 0.0);
         assertEquals(zerroRect, nBox );
-		*/
 			
 		// Test, ob die Übergabe eines NULL-Werts erfolgreich abgefangen wurde (Rueckgabe == NULL!)
 		// 
