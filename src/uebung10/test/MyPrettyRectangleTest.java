@@ -106,6 +106,10 @@ public class MyPrettyRectangleTest {
         //
         // [ihr Code]
 
+		assertEquals(6.0,left.getArea());
+		assertEquals(1.0, middle.getArea());
+		assertEquals(12.0, right.getArea());
+		assertEquals(3.0, somewhere.getArea());
 
 	}
 
@@ -126,6 +130,8 @@ public class MyPrettyRectangleTest {
 		// Weitere Infos: http://stackoverflow.com/questions/7554281/junit-assertions-make-the-assertion-between-floats
 		//
         // [ihr Code]
+
+		assertEquals(10.0, left.getPerimeter());
 
 	}
 

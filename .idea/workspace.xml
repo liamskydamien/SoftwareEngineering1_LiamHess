@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="add more tests">
-      <change beforePath="$PROJECT_DIR$/src/uebung10/test/MyPrettyRectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung10/test/MyPrettyRectangle.java" afterDir="false" />
+    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Add new functions">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uebung10/test/MyPrettyRectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung10/test/MyPrettyRectangleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,37 +75,7 @@
       <recent name="C:\Users\Liams\OneDrive\Desktop\SoftwareEngineering1_LiamHess\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyPrettyRectangleTest.testGetCenter">
-    <configuration name="ContainerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SoftwareEngineering1_LiamHess" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uebung3.Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uebung3.Tests" />
-      <option name="MAIN_CLASS_NAME" value="uebung3.Tests.ContainerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContainerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SoftwareEngineering1_LiamHess" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uebung2.Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uebung2.Tests" />
-      <option name="MAIN_CLASS_NAME" value="uebung2.Tests.ContainerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MyPrettyRectangleTest.testGetPerimeter">
     <configuration name="ContainerTest.testeKorrektesSzenario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SoftwareEngineering1_LiamHess" />
       <extension name="coverage">
@@ -138,6 +108,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyPrettyRectangleTest.testGetArea" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareEngineering1_LiamHess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uebung10.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uebung10.test" />
+      <option name="MAIN_CLASS_NAME" value="uebung10.test.MyPrettyRectangleTest" />
+      <option name="METHOD_NAME" value="testGetArea" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyPrettyRectangleTest.testGetCenter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SoftwareEngineering1_LiamHess" />
       <extension name="coverage">
@@ -154,13 +140,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyPrettyRectangleTest.testGetPerimeter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareEngineering1_LiamHess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uebung10.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uebung10.test" />
+      <option name="MAIN_CLASS_NAME" value="uebung10.test.MyPrettyRectangleTest" />
+      <option name="METHOD_NAME" value="testGetPerimeter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyPrettyRectangleTest.testGetPerimeter" />
+        <item itemvalue="JUnit.MyPrettyRectangleTest.testGetArea" />
         <item itemvalue="JUnit.MyPrettyRectangleTest.testGetCenter" />
         <item itemvalue="JUnit.MyPrettyRectangleTest.testContains" />
         <item itemvalue="JUnit.ContainerTest.testeKorrektesSzenario" />
-        <item itemvalue="JUnit.ContainerTest (1)" />
-        <item itemvalue="JUnit.ContainerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +190,7 @@
       <workItem from="1671891093011" duration="10000" />
       <workItem from="1673528948633" duration="319000" />
       <workItem from="1673558132936" duration="8000" />
-      <workItem from="1673627199523" duration="3509000" />
+      <workItem from="1673627199523" duration="4593000" />
     </task>
     <task id="LOCAL-00001" summary="Uebung1">
       <created>1664646708277</created>
@@ -281,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673630419896</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Add new functions">
+      <created>1673630721841</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1673630721841</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +318,8 @@
     <MESSAGE value="Add MyPoint and MyPrettyRectangle Methods" />
     <MESSAGE value="Finalizing classes" />
     <MESSAGE value="add more tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="add more tests" />
+    <MESSAGE value="Add new functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new functions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
