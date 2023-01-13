@@ -31,7 +31,7 @@ public class MyPrettyRectangle {
 
 
     public MyPoint getCenter() {
-        return new MyPoint((bottomLeft.getX() - topRight.getX()), (topRight.getY() - bottomLeft.getY()));
+        return new MyPoint((topRight.getX() + bottomLeft.getX()) / 2, (topRight.getY() + bottomLeft.getY()) / 2);
     }
 
     public boolean contains(MyPrettyRectangle middle) {

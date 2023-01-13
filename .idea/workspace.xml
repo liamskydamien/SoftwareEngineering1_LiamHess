@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Add MyPoint and MyPrettyRectangle Methods">
-      <change afterPath="$PROJECT_DIR$/src/uebung10/test/BoundingBoxFactory.java" afterDir="false" />
+    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Finalizing classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uebung10/test/MyPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung10/test/MyPoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uebung10/test/MyPrettyRectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung10/test/MyPrettyRectangle.java" afterDir="false" />
@@ -191,7 +190,7 @@
       <workItem from="1671891093011" duration="10000" />
       <workItem from="1673528948633" duration="319000" />
       <workItem from="1673558132936" duration="8000" />
-      <workItem from="1673627199523" duration="1917000" />
+      <workItem from="1673627199523" duration="3011000" />
     </task>
     <task id="LOCAL-00001" summary="Uebung1">
       <created>1664646708277</created>
@@ -270,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673549449946</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Finalizing classes">
+      <created>1673629176180</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1673629176180</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,6 +302,27 @@
     <MESSAGE value="uebung3 setup" />
     <MESSAGE value="Add classes" />
     <MESSAGE value="Add MyPoint and MyPrettyRectangle Methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add MyPoint and MyPrettyRectangle Methods" />
+    <MESSAGE value="Finalizing classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalizing classes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/uebung10/test/MyPrettyRectangle.java</url>
+          <line>32</line>
+          <properties class="uebung10.test.MyPrettyRectangle" method="getCenter">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/uebung10/test/MyPrettyRectangleTest.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

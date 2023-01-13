@@ -28,4 +28,15 @@ public class MyPoint implements Comparable<MyPoint>{
             return 1;
         }
     }
+
+    @Override
+    public boolean equals(Object o){
+        if(o == null) return false;
+        if((o instanceof MyPoint test)) {
+            return getX() == test.getX() & getY() == test.getY();
+        }
+        else {
+            return false;
+        }
+    }
 }

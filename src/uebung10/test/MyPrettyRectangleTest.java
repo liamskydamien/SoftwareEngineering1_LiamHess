@@ -57,7 +57,11 @@ public class MyPrettyRectangleTest {
 
         // Weitere hinzufügen für einen vollständigen Test
 
-
+		assertTrue(left.contains(middle));
+		assertFalse(right.contains(somewhere));
+		assertFalse(middle.contains(right));
+		assertFalse(left.contains(right));
+		assertFalse(right.contains(left));
 	}
 
 	/*
@@ -78,6 +82,12 @@ public class MyPrettyRectangleTest {
 		//
 		// [ihr Code]
 
+		assertEquals(new MyPoint(2.5, 2.5), middle.getCenter());
+		assertEquals(new MyPoint(2.5, 2.0), right.getCenter());
+		assertEquals(new MyPoint(5.5,2.5), somewhere.getCenter());
+
+		MyPrettyRectangle nullnull = new MyPrettyRectangle(0.0,0.0,0.0,0.0);
+		assertEquals(new MyPoint(0.0,0.0), nullnull.getCenter());
     }
 
 	/*
