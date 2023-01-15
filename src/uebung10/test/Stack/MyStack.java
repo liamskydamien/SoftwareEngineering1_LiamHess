@@ -5,7 +5,6 @@ import uebung10.test.MyPrettyRectangle;
 import java.util.Stack;
 
 public class MyStack<T> extends Stack<T> {
-    int counter = 0;
     int max;
 
     public MyStack(int max){
@@ -14,9 +13,7 @@ public class MyStack<T> extends Stack<T> {
 
     @Override
     public T push(T item) {
-        counter++;
-        if(counter >= max){
-            counter--;
+        if(isFull()){
             throw new IndexOutOfBoundsException();
         }
         return super.push(item);
@@ -24,13 +21,11 @@ public class MyStack<T> extends Stack<T> {
 
     @Override
     public synchronized T pop() {
-        counter--;
-        if(counter < 0){
-            counter = 0;
-            throw new IndexOutOfBoundsException();
-        }
         return super.pop();
     }
 
+    private boolean isFull(){
+        return size() == max;
+    }
 
 }
