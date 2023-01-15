@@ -48,4 +48,15 @@ public class MyPrettyRectangle {
     public double getPerimeter(){
         return (topRight.getX() - bottomLeft.getX()) * 2 + (topRight.getY() - bottomLeft.getY()) * 2;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof MyPrettyRectangle){
+            MyPrettyRectangle r = (MyPrettyRectangle) obj;
+            return r.topRight.equals(this.topRight) & r.bottomLeft.equals(this.bottomLeft);
+        }
+        else {
+            throw new IllegalArgumentException();
+        }
+    }
 }

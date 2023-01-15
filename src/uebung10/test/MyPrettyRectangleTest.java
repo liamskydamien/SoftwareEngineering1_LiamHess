@@ -192,18 +192,19 @@ public class MyPrettyRectangleTest {
 		// Die Methode der Klasse BoundingBoxFactory sollten sie selbst definieren und implementieren.
 		//
 		// [ihr Code]
-
+		MyPrettyRectangle boundingBox = BoundingBoxFactory.createBoundingBox(rect);
+		assertEquals(boundingBox.getBottomLeft(), right.getBottomLeft());
+		assertEquals(boundingBox.getTopRight(), somewhere.getTopRight());
 
 		// Testen sie zudem, ob ueberhaupt ein Objekt zurueckgegeben wird,
         // d.h. der Rueckgabe-Wert ungleich NULL ist
 		//
 		// [ihr Code]
-
+		assertNotNull(boundingBox);
 
 		// Test, ob die Übergabe eines leeren Arrays ein "Null-Rectangle" (Objekt mit vier mal die Koordinaten 0) zurueckliefert:
 		//
 		// [ihr Code]
-		//TODO
 
         MyPrettyRectangle[] emptyRect = { };
         MyPrettyRectangle nBox = BoundingBoxFactory.createBoundingBox( emptyRect );
@@ -213,7 +214,7 @@ public class MyPrettyRectangleTest {
 		// Test, ob die Übergabe eines NULL-Werts erfolgreich abgefangen wurde (Rueckgabe == NULL!)
 		// 
 		// [ihr Code]
-
+		assertThrows(IllegalArgumentException.class, () -> BoundingBoxFactory.createBoundingBox(null));
 	}
 
 }
