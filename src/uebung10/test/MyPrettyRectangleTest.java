@@ -148,18 +148,28 @@ public class MyPrettyRectangleTest {
 
 		MyPrettyRectangle other = left;
 		// [ihr Code]
+		assertNotSame(other, right);
+		assertNotSame(other, middle);
+		assertSame(other, left);
 
 		// Bitte drei Assertions hinzufuegen, um die Gleichheit von Rechteck-Objekten zu ueberpruefen.
         // Bitte nur die Assertion assertTrue verwenden:
         //
         // [ihr Code]
+		assertTrue(other == left);
+		assertFalse(other == right);
+		assertFalse(other == middle);
 
 
 		// Bitte drei weitere Assertions hinzufuegen, welce die Objekt-Identitaet des Rechtecks 'left' mit allen anderen
 		// Rechtecken ueberprueft (inklusive other). Bitte hier nur die Assertions assertTrue und assertFalse verwenden.
         //
         // [ihr Code]
-
+		assertTrue(left == other);
+		assertFalse(left == right);
+		assertFalse(left == middle);
+		assertFalse(left == somewhere);
+		assertTrue(left == left);
 	}
 
 	/*
