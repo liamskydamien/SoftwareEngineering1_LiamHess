@@ -8,6 +8,7 @@ public class MyStack<T> extends Stack<T> {
     int max;
 
     public MyStack(int max){
+        super();
         this.max = max;
     }
 
@@ -25,7 +26,7 @@ public class MyStack<T> extends Stack<T> {
     }
 
     private boolean isFull(){
-        return size() == max;
+        return super.size() >= max;
     }
 
 }

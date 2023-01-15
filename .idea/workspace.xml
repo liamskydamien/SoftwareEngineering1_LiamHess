@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Implement MyStack">
+      <change afterPath="$PROJECT_DIR$/src/uebung10/test/Stack/TestMyStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uebung10/test/Stack/MyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung10/test/Stack/MyStack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +76,7 @@
       <recent name="C:\Users\Liams\OneDrive\Desktop\SoftwareEngineering1_LiamHess\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyPrettyRectangleTest.testGetBoundingBox">
+  <component name="RunManager" selected="JUnit.TestMyStack">
     <configuration name="MyPrettyRectangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SoftwareEngineering1_LiamHess" />
       <extension name="coverage">
@@ -90,22 +92,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyPrettyRectangleTest.testGetArea" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SoftwareEngineering1_LiamHess" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uebung10.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uebung10.test" />
-      <option name="MAIN_CLASS_NAME" value="uebung10.test.MyPrettyRectangleTest" />
-      <option name="METHOD_NAME" value="testGetArea" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MyPrettyRectangleTest.testGetBoundingBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SoftwareEngineering1_LiamHess" />
       <extension name="coverage">
@@ -117,22 +103,6 @@
       <option name="PACKAGE_NAME" value="uebung10.test" />
       <option name="MAIN_CLASS_NAME" value="uebung10.test.MyPrettyRectangleTest" />
       <option name="METHOD_NAME" value="testGetBoundingBox" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyPrettyRectangleTest.testGetCenter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SoftwareEngineering1_LiamHess" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uebung10.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uebung10.test" />
-      <option name="MAIN_CLASS_NAME" value="uebung10.test.MyPrettyRectangleTest" />
-      <option name="METHOD_NAME" value="testGetCenter" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,13 +124,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestMyStack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareEngineering1_LiamHess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uebung10.test.Stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uebung10.test.Stack" />
+      <option name="MAIN_CLASS_NAME" value="uebung10.test.Stack.TestMyStack" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMyStack.testeDurchlauf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareEngineering1_LiamHess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uebung10.test.Stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uebung10.test.Stack" />
+      <option name="MAIN_CLASS_NAME" value="uebung10.test.Stack.TestMyStack" />
+      <option name="METHOD_NAME" value="testeDurchlauf" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestMyStack" />
+        <item itemvalue="JUnit.TestMyStack.testeDurchlauf" />
         <item itemvalue="JUnit.MyPrettyRectangleTest.testGetBoundingBox" />
         <item itemvalue="JUnit.MyPrettyRectangleTest" />
         <item itemvalue="JUnit.MyPrettyRectangleTest.testGetPerimeter" />
-        <item itemvalue="JUnit.MyPrettyRectangleTest.testGetArea" />
-        <item itemvalue="JUnit.MyPrettyRectangleTest.testGetCenter" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +190,7 @@
       <workItem from="1673528948633" duration="319000" />
       <workItem from="1673558132936" duration="8000" />
       <workItem from="1673627199523" duration="5106000" />
-      <workItem from="1673798730583" duration="3533000" />
+      <workItem from="1673798730583" duration="4525000" />
     </task>
     <task id="LOCAL-00001" summary="Uebung1">
       <created>1664646708277</created>
@@ -317,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673802519947</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Implement MyStack">
+      <created>1673802683243</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1673802683243</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,6 +427,14 @@
           <url>file://$PROJECT_DIR$/src/uebung10/test/BoundingBoxFactory.java</url>
           <line>2</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/uebung10/test/Stack/TestMyStack.java</url>
+          <line>21</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
