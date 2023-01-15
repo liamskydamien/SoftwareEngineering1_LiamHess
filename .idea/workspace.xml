@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Add new Test">
+    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Starting Stack">
+      <change afterPath="$PROJECT_DIR$/src/uebung10/test/Stack/MyStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung10/test/BoundingBoxFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung10/test/BoundingBoxFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung10/test/MyPrettyRectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung10/test/MyPrettyRectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung10/test/MyPrettyRectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung10/test/MyPrettyRectangleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +190,7 @@
       <workItem from="1673528948633" duration="319000" />
       <workItem from="1673558132936" duration="8000" />
       <workItem from="1673627199523" duration="5106000" />
-      <workItem from="1673798730583" duration="1447000" />
+      <workItem from="1673798730583" duration="3363000" />
     </task>
     <task id="LOCAL-00001" summary="Uebung1">
       <created>1664646708277</created>
@@ -306,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673799004153</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Finishing Tests">
+      <created>1673800201328</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1673800201328</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +342,9 @@
     <MESSAGE value="Add new functions" />
     <MESSAGE value="Add new Tests" />
     <MESSAGE value="Add new Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new Test" />
+    <MESSAGE value="Finishing Tests" />
+    <MESSAGE value="Starting Stack" />
+    <option name="LAST_COMMIT_MESSAGE" value="Starting Stack" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
