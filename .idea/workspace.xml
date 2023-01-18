@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Implement MyStack">
-      <change afterPath="$PROJECT_DIR$/src/uebung10/test/Stack/TestMyStack.java" afterDir="false" />
+    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="se10">
+      <change afterPath="$PROJECT_DIR$/src/uebung10/test/TestArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uebung10/test/Util.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung10/test/Stack/MyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung10/test/Stack/MyStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung10/test/MyPrettyRectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung10/test/MyPrettyRectangleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,13 +56,11 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Liams/OneDrive/Desktop/SoftwareEngineering1_LiamHess/src/uebung3&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;ChangesTree.GroupingKeys&quot;: [
@@ -76,8 +75,9 @@
       <recent name="C:\Users\Liams\OneDrive\Desktop\SoftwareEngineering1_LiamHess\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestMyStack">
-    <configuration name="MyPrettyRectangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.TestArray">
+    <configuration name="TestArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="uebung10.test.TestArray" />
       <module name="SoftwareEngineering1_LiamHess" />
       <extension name="coverage">
         <pattern>
@@ -85,71 +85,67 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="uebung10.test" />
-      <option name="MAIN_CLASS_NAME" value="uebung10.test.MyPrettyRectangleTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContainerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareEngineering1_LiamHess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uebung3.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uebung3.Tests" />
+      <option name="MAIN_CLASS_NAME" value="uebung3.Tests.ContainerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyPrettyRectangleTest.testGetBoundingBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContainerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SoftwareEngineering1_LiamHess" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uebung10.test.*" />
+          <option name="PATTERN" value="uebung2.Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="uebung10.test" />
-      <option name="MAIN_CLASS_NAME" value="uebung10.test.MyPrettyRectangleTest" />
-      <option name="METHOD_NAME" value="testGetBoundingBox" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyPrettyRectangleTest.testGetPerimeter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SoftwareEngineering1_LiamHess" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uebung10.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uebung10.test" />
-      <option name="MAIN_CLASS_NAME" value="uebung10.test.MyPrettyRectangleTest" />
-      <option name="METHOD_NAME" value="testGetPerimeter" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestMyStack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SoftwareEngineering1_LiamHess" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uebung10.test.Stack.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uebung10.test.Stack" />
-      <option name="MAIN_CLASS_NAME" value="uebung10.test.Stack.TestMyStack" />
+      <option name="PACKAGE_NAME" value="uebung2.Tests" />
+      <option name="MAIN_CLASS_NAME" value="uebung2.Tests.ContainerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMyStack.testeDurchlauf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContainerTest.testeEingabeVonNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SoftwareEngineering1_LiamHess" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uebung10.test.Stack.*" />
+          <option name="PATTERN" value="uebung2.Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="uebung10.test.Stack" />
-      <option name="MAIN_CLASS_NAME" value="uebung10.test.Stack.TestMyStack" />
-      <option name="METHOD_NAME" value="testeDurchlauf" />
+      <option name="PACKAGE_NAME" value="uebung2.Tests" />
+      <option name="MAIN_CLASS_NAME" value="uebung2.Tests.ContainerTest" />
+      <option name="METHOD_NAME" value="testeEingabeVonNull" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContainerTest.testeKorrektesSzenario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareEngineering1_LiamHess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uebung3.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uebung3.Tests" />
+      <option name="MAIN_CLASS_NAME" value="uebung3.Tests.ContainerTest" />
+      <option name="METHOD_NAME" value="testeKorrektesSzenario" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -157,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestMyStack" />
-        <item itemvalue="JUnit.TestMyStack.testeDurchlauf" />
-        <item itemvalue="JUnit.MyPrettyRectangleTest.testGetBoundingBox" />
-        <item itemvalue="JUnit.MyPrettyRectangleTest" />
-        <item itemvalue="JUnit.MyPrettyRectangleTest.testGetPerimeter" />
+        <item itemvalue="Application.TestArray" />
+        <item itemvalue="JUnit.ContainerTest.testeKorrektesSzenario" />
+        <item itemvalue="JUnit.ContainerTest (1)" />
+        <item itemvalue="JUnit.ContainerTest" />
+        <item itemvalue="JUnit.ContainerTest.testeEingabeVonNull" />
       </list>
     </recent_temporary>
   </component>
@@ -188,9 +184,7 @@
       <workItem from="1671534023142" duration="128000" />
       <workItem from="1671891093011" duration="10000" />
       <workItem from="1673528948633" duration="319000" />
-      <workItem from="1673558132936" duration="8000" />
-      <workItem from="1673627199523" duration="5106000" />
-      <workItem from="1673798730583" duration="4525000" />
+      <workItem from="1674046110970" duration="975000" />
     </task>
     <task id="LOCAL-00001" summary="Uebung1">
       <created>1664646708277</created>
@@ -255,77 +249,7 @@
       <option name="project" value="LOCAL" />
       <updated>1666183749044</updated>
     </task>
-    <task id="LOCAL-00010" summary="Add classes">
-      <created>1673548506897</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1673548506897</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Add MyPoint and MyPrettyRectangle Methods">
-      <created>1673549449946</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1673549449946</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Finalizing classes">
-      <created>1673629176180</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1673629176180</updated>
-    </task>
-    <task id="LOCAL-00013" summary="add more tests">
-      <created>1673630419896</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1673630419896</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Add new functions">
-      <created>1673630721841</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1673630721841</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Add new Tests">
-      <created>1673631822333</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1673631822333</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Add new Test">
-      <created>1673799004153</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1673799004153</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Finishing Tests">
-      <created>1673800201328</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1673800201328</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Implement MyStack">
-      <created>1673802519947</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1673802519947</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Implement MyStack">
-      <created>1673802683243</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1673802683243</updated>
-    </task>
-    <option name="localTasksCounter" value="20" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,94 +273,6 @@
     <MESSAGE value="Add First Tests" />
     <MESSAGE value="Fix tests" />
     <MESSAGE value="uebung3 setup" />
-    <MESSAGE value="Add classes" />
-    <MESSAGE value="Add MyPoint and MyPrettyRectangle Methods" />
-    <MESSAGE value="Finalizing classes" />
-    <MESSAGE value="add more tests" />
-    <MESSAGE value="Add new functions" />
-    <MESSAGE value="Add new Tests" />
-    <MESSAGE value="Add new Test" />
-    <MESSAGE value="Finishing Tests" />
-    <MESSAGE value="Starting Stack" />
-    <MESSAGE value="Implement MyStack" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement MyStack" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/uebung10/test/MyPrettyRectangle.java</url>
-          <line>32</line>
-          <properties class="uebung10.test.MyPrettyRectangle" method="getCenter">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/uebung10/test/MyPrettyRectangleTest.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/uebung10/test/BoundingBoxFactory.java</url>
-          <line>4</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/uebung10/test/BoundingBoxFactory.java</url>
-          <line>5</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/uebung10/test/BoundingBoxFactory.java</url>
-          <line>6</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/uebung10/test/BoundingBoxFactory.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/uebung10/test/BoundingBoxFactory.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/uebung10/test/BoundingBoxFactory.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/uebung10/test/BoundingBoxFactory.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/uebung10/test/BoundingBoxFactory.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/uebung10/test/BoundingBoxFactory.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/uebung10/test/BoundingBoxFactory.java</url>
-          <line>2</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/uebung10/test/Stack/TestMyStack.java</url>
-          <line>21</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <option name="LAST_COMMIT_MESSAGE" value="uebung3 setup" />
   </component>
 </project>
