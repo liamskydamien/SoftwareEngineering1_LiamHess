@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Adding final classes and Test">
-      <change afterPath="$PROJECT_DIR$/src/wiederholung/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wiederholung/uebung1/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wiederholung/uebung1/GermanTranslator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wiederholung/uebung1/Translator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2022_11_02__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2022_11_02__Changes_.xml" afterDir="false" />
+    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="se10">
+      <change afterPath="$PROJECT_DIR$/src/uebung10/test/TestArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uebung10/test/Util.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objects.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung1/control/GermanTranslator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung1/control/Translator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung1/test/GermanTranslatorTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung1/utility/TranslatorFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebung1/view/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebung10/test/MyPrettyRectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebung10/test/MyPrettyRectangleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +18,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -56,45 +46,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "C:/Users/Liams/OneDrive/Desktop/SoftwareEngineering1_LiamHess/src/uebung3",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "show.migrate.to.gradle.popup": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Liams/OneDrive/Desktop/SoftwareEngineering1_LiamHess/src/uebung3&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "directory",
-      "module"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Liams\OneDrive\Desktop\SoftwareEngineering1_LiamHess\src\uebung3" />
       <recent name="C:\Users\Liams\OneDrive\Desktop\SoftwareEngineering1_LiamHess\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestDocument">
-    <configuration name="TestDocument" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="uebung9.Test.TestDocument" />
+  <component name="RunManager" selected="Application.TestArray">
+    <configuration name="TestArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="uebung10.test.TestArray" />
       <module name="SoftwareEngineering1_LiamHess" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uebung9.Test.*" />
+          <option name="PATTERN" value="uebung10.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -166,7 +153,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestDocument" />
+        <item itemvalue="Application.TestArray" />
         <item itemvalue="JUnit.ContainerTest.testeKorrektesSzenario" />
         <item itemvalue="JUnit.ContainerTest (1)" />
         <item itemvalue="JUnit.ContainerTest" />
@@ -194,10 +181,10 @@
       <workItem from="1666182938392" duration="400000" />
       <workItem from="1666183568860" duration="364000" />
       <workItem from="1666184242341" duration="1478000" />
-      <workItem from="1672647115529" duration="23000" />
-      <workItem from="1672677439961" duration="937000" />
-      <workItem from="1672681397414" duration="105000" />
-      <workItem from="1676552257393" duration="162000" />
+      <workItem from="1671534023142" duration="128000" />
+      <workItem from="1671891093011" duration="10000" />
+      <workItem from="1673528948633" duration="319000" />
+      <workItem from="1674046110970" duration="975000" />
     </task>
     <task id="LOCAL-00001" summary="Uebung1">
       <created>1664646708277</created>
@@ -262,28 +249,7 @@
       <option name="project" value="LOCAL" />
       <updated>1666183749044</updated>
     </task>
-    <task id="LOCAL-00010" summary="Uebung9 Start">
-      <created>1672494427777</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1672494427777</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Adding Encoding Types">
-      <created>1672495101210</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1672495101210</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Adding final classes and Test">
-      <created>1672496815030</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1672496815030</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,35 +273,6 @@
     <MESSAGE value="Add First Tests" />
     <MESSAGE value="Fix tests" />
     <MESSAGE value="uebung3 setup" />
-    <MESSAGE value="Uebung9 Start" />
-    <MESSAGE value="Adding Encoding Types" />
-    <MESSAGE value="Adding final classes and Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding final classes and Test" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/uebung9/Document/TextDocument.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/uebung9/Document/ComplexDocument.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/uebung9/Document/ComplexDocument.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/uebung9/Document/GraphicDocument.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <option name="LAST_COMMIT_MESSAGE" value="uebung3 setup" />
   </component>
 </project>
