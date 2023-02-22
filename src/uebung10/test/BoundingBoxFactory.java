@@ -3,7 +3,7 @@ package uebung10.test;
 public class BoundingBoxFactory {
     public static MyPrettyRectangle createBoundingBox(MyPrettyRectangle[] rectangles) {
         if (rectangles != null) {
-            if (rectangles.length > 0) {
+            if (Util.checkArrayEmpty(rectangles)) {
                 MyPoint lowestLeft = rectangles[0].getBottomLeft();
                 MyPoint highestRight = rectangles[0].getTopRight();
                 for (MyPrettyRectangle myPrettyRectangle : rectangles) {
