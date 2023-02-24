@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="se10">
-      <change afterPath="$PROJECT_DIR$/src/wiederholung/uebung1/TranslatorFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Changes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Changes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_12_2022_16_29__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_12_2022_16_29__Changes_.xml" afterDir="false" />
+    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Add setup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wiederholung/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wiederholung/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wiederholung/uebung1/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wiederholung/uebung1/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wiederholung/uebung1/GermanTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wiederholung/uebung1/GermanTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wiederholung/uebung1/Translator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wiederholung/uebung1/Translator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +51,9 @@
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "ChangesTree.GroupingKeys": [
@@ -180,6 +175,7 @@
       <workItem from="1671891093011" duration="10000" />
       <workItem from="1673528948633" duration="319000" />
       <workItem from="1674046110970" duration="975000" />
+      <workItem from="1677171120511" duration="720000" />
     </task>
     <task id="LOCAL-00001" summary="Uebung1">
       <created>1664646708277</created>
