@@ -8,7 +8,7 @@ public class View {
 
     public void createClasses(){
         for (int i = 0; i < 5; i++) {
-            complexClasses[i] = factory.createComplexClass("Liam", new Date("15-08-2001"));
+            complexClasses[i] = factory.createComplexClass("Liam", new Date(2001,8,15));
         }
     }
 
