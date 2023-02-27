@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Finish" />
+    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Finish">
+      <change afterPath="$PROJECT_DIR$/src/LearningPatterns/CommandPattern/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LearningPatterns/CommandPattern/CommandA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LearningPatterns/CommandPattern/CommandB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LearningPatterns/CommandPattern/CommandHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LearningPatterns/CommandPattern/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +20,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -66,7 +74,20 @@
       <recent name="C:\Users\Liams\OneDrive\Desktop\SoftwareEngineering1_LiamHess\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LearningPatterns.SingeltonAndFactoryMethodPattern.Main">
+  <component name="RunManager" selected="Application.LearningPatterns.CommandPattern.Main">
+    <configuration name="LearningPatterns.CommandPattern.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LearningPatterns.CommandPattern.Main" />
+      <module name="SoftwareEngineering1_LiamHess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LearningPatterns.CommandPattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LearningPatterns.SingeltonAndFactoryMethodPattern.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LearningPatterns.SingeltonAndFactoryMethodPattern.Main" />
       <module name="SoftwareEngineering1_LiamHess" />
@@ -106,21 +127,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContainerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SoftwareEngineering1_LiamHess" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uebung3.Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uebung3.Tests" />
-      <option name="MAIN_CLASS_NAME" value="uebung3.Tests.ContainerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ContainerTest.testeKorrektesSzenario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SoftwareEngineering1_LiamHess" />
       <extension name="coverage">
@@ -139,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LearningPatterns.CommandPattern.Main" />
         <item itemvalue="Application.LearningPatterns.SingeltonAndFactoryMethodPattern.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.TestArray" />
         <item itemvalue="JUnit.ContainerTest.testeKorrektesSzenario" />
-        <item itemvalue="JUnit.ContainerTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +178,9 @@
       <workItem from="1673528948633" duration="319000" />
       <workItem from="1674046110970" duration="975000" />
       <workItem from="1677171120511" duration="720000" />
-      <workItem from="1677252692427" duration="2237000" />
+      <workItem from="1677252692427" duration="2795000" />
+      <workItem from="1677360936868" duration="80000" />
+      <workItem from="1677517231164" duration="769000" />
     </task>
     <task id="LOCAL-00001" summary="Uebung1">
       <created>1664646708277</created>
@@ -279,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677254237487</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Finish">
+      <created>1677267435033</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1677267435033</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
