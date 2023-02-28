@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Finish">
-      <change afterPath="$PROJECT_DIR$/src/LearningPatterns/CommandPattern/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LearningPatterns/CommandPattern/CommandA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LearningPatterns/CommandPattern/CommandB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LearningPatterns/CommandPattern/CommandHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LearningPatterns/CommandPattern/Main.java" afterDir="false" />
+    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Implement &quot;Own-Version&quot; of CommandPattern">
+      <change afterPath="$PROJECT_DIR$/src/LearningPatterns/ObserverPattern/ConcreteSubscriber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LearningPatterns/ObserverPattern/Publisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LearningPatterns/ObserverPattern/Subscriber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +56,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -180,7 +179,8 @@
       <workItem from="1677171120511" duration="720000" />
       <workItem from="1677252692427" duration="2795000" />
       <workItem from="1677360936868" duration="80000" />
-      <workItem from="1677517231164" duration="769000" />
+      <workItem from="1677517231164" duration="1734000" />
+      <workItem from="1677605549397" duration="704000" />
     </task>
     <task id="LOCAL-00001" summary="Uebung1">
       <created>1664646708277</created>
@@ -294,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677267435033</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Implement &quot;Own-Version&quot; of CommandPattern">
+      <created>1677518557335</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1677518557335</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,6 +331,7 @@
     <MESSAGE value="Implement Factory Method Pattern" />
     <MESSAGE value="Add View" />
     <MESSAGE value="Finish" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish" />
+    <MESSAGE value="Implement &quot;Own-Version&quot; of CommandPattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement &quot;Own-Version&quot; of CommandPattern" />
   </component>
 </project>
