@@ -22,5 +22,5 @@ public abstract class AbstractReportPublisher {
 
     public abstract void produce();
 
-    public abstract void getReport();
+    public abstract Report getReport(int id);
 }
