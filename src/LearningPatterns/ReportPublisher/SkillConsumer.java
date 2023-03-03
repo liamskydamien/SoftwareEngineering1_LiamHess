@@ -1,8 +1,19 @@
 package LearningPatterns.ReportPublisher;
 
-public class SkillConsumer implements Consumer{
-    @Override
-    public void update(int id, String topic) {
+import java.util.ArrayList;
+import java.util.List;
 
+public class SkillConsumer implements Consumer{
+    List<String> topics = new ArrayList<>();
+
+    public void addTopic(String newTopic){
+        topics.add(newTopic);
+    }
+
+    @Override
+    public void update(ReportDTO reportDTO) {
+        if(topics.contains(reportDTO.topic())){
+            System.out.println(reportDTO.report());
+        }
     }
 }

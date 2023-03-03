@@ -18,7 +18,7 @@ public abstract class AbstractReportPublisher {
 
     public void notify(int id, String topic){
         for (Consumer c : subscribers){
-            c.update(id, topic);
+            c.update(new ReportDTO(id, topic));
         }
     }
 
