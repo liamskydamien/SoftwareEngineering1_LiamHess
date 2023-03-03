@@ -1,6 +1,6 @@
 package LearningPatterns.ReportPublisher;
 
-public interface Report {
-    int getID();
-    void setID(int id);
+public abstract class Report {
+    public abstract int getID();
+    public abstract void setID(int id);
 }

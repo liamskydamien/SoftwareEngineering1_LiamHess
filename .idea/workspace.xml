@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Setup Strategy Pattern">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Add SkillReport">
+      <change afterPath="$PROJECT_DIR$/src/LearningPatterns/ReportPublisher/CompanyReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LearningPatterns/ReportPublisher/SkillReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LearningPatterns/ReportPublisher/SkillReport.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,6 +181,7 @@
       <workItem from="1677688729612" duration="668000" />
       <workItem from="1677778971282" duration="363000" />
       <workItem from="1677789294604" duration="10000" />
+      <workItem from="1677872951822" duration="428000" />
     </task>
     <task id="LOCAL-00001" summary="Uebung1">
       <created>1664646708277</created>
@@ -342,7 +344,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677779310175</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Add Report Interface">
+      <created>1677873097964</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1677873097964</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Add SkillReport">
+      <created>1677873251073</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1677873251073</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,6 +393,8 @@
     <MESSAGE value="Setup Adapter Pattern" />
     <MESSAGE value="Adapter Pattern" />
     <MESSAGE value="Setup Strategy Pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup Strategy Pattern" />
+    <MESSAGE value="Add Report Interface" />
+    <MESSAGE value="Add SkillReport" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add SkillReport" />
   </component>
 </project>

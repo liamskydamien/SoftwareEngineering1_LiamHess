@@ -1,6 +1,6 @@
 package LearningPatterns.ReportPublisher;
 
-public class CompanyReport implements Report{
+public class CompanyReport extends Report{
 
     private int id;
     private String companyName;

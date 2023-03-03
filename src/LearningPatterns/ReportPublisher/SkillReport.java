@@ -1,6 +1,6 @@
 package LearningPatterns.ReportPublisher;
 
-public class SkillReport implements Report {
+public class SkillReport extends Report {
     private int id;
     private String skill;
     private String student;
