@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Setup Strategy Pattern">
-      <change beforePath="$PROJECT_DIR$/src/LearningPatterns/StrategyPattern/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LearningPatterns/StrategyPattern/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +178,8 @@
       <workItem from="1677605549397" duration="4703000" />
       <workItem from="1677621806706" duration="2000" />
       <workItem from="1677688729612" duration="668000" />
-      <workItem from="1677778971282" duration="333000" />
+      <workItem from="1677778971282" duration="363000" />
+      <workItem from="1677789294604" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="Uebung1">
       <created>1664646708277</created>
@@ -334,7 +335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677779152419</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Setup Strategy Pattern">
+      <created>1677779310175</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1677779310175</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
