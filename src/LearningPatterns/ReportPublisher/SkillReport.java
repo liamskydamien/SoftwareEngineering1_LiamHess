@@ -34,6 +34,6 @@ public class SkillReport implements Report {
 
     @Override
     public void setID(int id) {
-
+        this.id = id;
     }
 }
