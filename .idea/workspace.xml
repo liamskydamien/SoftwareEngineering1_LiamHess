@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Add CompanyReportPublisher">
-      <change afterPath="$PROJECT_DIR$/src/LearningPatterns/ReportPublisher/ReportDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LearningPatterns/ReportPublisher/AbstractReportPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LearningPatterns/ReportPublisher/AbstractReportPublisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LearningPatterns/ReportPublisher/CompanyConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LearningPatterns/ReportPublisher/CompanyConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LearningPatterns/ReportPublisher/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LearningPatterns/ReportPublisher/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LearningPatterns/ReportPublisher/SkillConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LearningPatterns/ReportPublisher/SkillConsumer.java" afterDir="false" />
-    </list>
+    <list default="true" id="1deffec4-8737-49a6-ab4f-bf0eb7c5908b" name="Changes" comment="Add Company and Skill Consumer" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -186,7 +179,7 @@
       <workItem from="1677688729612" duration="668000" />
       <workItem from="1677778971282" duration="363000" />
       <workItem from="1677789294604" duration="10000" />
-      <workItem from="1677872951822" duration="4303000" />
+      <workItem from="1677872951822" duration="4917000" />
     </task>
     <task id="LOCAL-00001" summary="Uebung1">
       <created>1664646708277</created>
@@ -426,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677875958311</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Add Company and Skill Consumer">
+      <created>1677877270906</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1677877270906</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,6 +468,7 @@
     <MESSAGE value="Add AbstractReportPublisher" />
     <MESSAGE value="Add SkillReportPublisher" />
     <MESSAGE value="Add CompanyReportPublisher" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add CompanyReportPublisher" />
+    <MESSAGE value="Add Company and Skill Consumer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Company and Skill Consumer" />
   </component>
 </project>
