@@ -1,4 +1,4 @@
 package LearningPatterns.Composite;
 
-public interface CoreDocument extends Document{
+public abstract class CoreDocument extends AbstractDocument{
 }
